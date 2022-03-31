@@ -7,9 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="DTOs\" />
-    <Folder Include="Entities\" />
-    <Folder Include="IRepositories\Base\" />
+    <Folder Include="Handlers\" />
+    <Folder Include="Mapper\" />
+    <Folder Include="FluentValidations\" />
   </ItemGroup>
 
 </Project>
