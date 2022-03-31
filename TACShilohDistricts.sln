@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32228.430
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TACShilohDistricts", "TACShilohDistricts\TACShilohDistricts.csproj", "{B59176FF-D844-4636-964B-8277E2B7AC0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TACShilohDistricts.Core", "TACShilohDistricts.Core\TACShilohDistricts.Core.csproj", "{2794133A-6DC7-4A47-869C-F270C0585691}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B59176FF-D844-4636-964B-8277E2B7AC0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B59176FF-D844-4636-964B-8277E2B7AC0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B59176FF-D844-4636-964B-8277E2B7AC0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B59176FF-D844-4636-964B-8277E2B7AC0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2794133A-6DC7-4A47-869C-F270C0585691}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2794133A-6DC7-4A47-869C-F270C0585691}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2794133A-6DC7-4A47-869C-F270C0585691}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2794133A-6DC7-4A47-869C-F270C0585691}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3B897F34-ED05-47A0-BB03-9EFFCFCF992B}
+	EndGlobalSection
+EndGlobal
