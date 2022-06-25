@@ -1,0 +1,14 @@
+C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts.Core\bin\Debug\net6.0\TACShilohDistricts.Core.deps.json
+C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts.Core\bin\Debug\net6.0\TACShilohDistricts.Core.runtimeconfig.json
+C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts.Core\bin\Debug\net6.0\TACShilohDistricts.Core.dll
+C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts.Core\bin\Debug\net6.0\TACShilohDistricts.Core.pdb
+C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts.Core\obj\Debug\net6.0\TACShilohDistricts.Core.csproj.AssemblyReference.cache
+C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts.Core\obj\Debug\net6.0\TACShilohDistricts.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts.Core\obj\Debug\net6.0\TACShilohDistricts.Core.AssemblyInfoInputs.cache
+C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts.Core\obj\Debug\net6.0\TACShilohDistricts.Core.AssemblyInfo.cs
+C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts.Core\obj\Debug\net6.0\TACShilohDistricts.Core.csproj.CoreCompileInputs.cache
+C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts.Core\obj\Debug\net6.0\TACShilohDistricts.Core.dll
+C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts.Core\obj\Debug\net6.0\refint\TACShilohDistricts.Core.dll
+C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts.Core\obj\Debug\net6.0\TACShilohDistricts.Core.pdb
+C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts.Core\obj\Debug\net6.0\TACShilohDistricts.Core.genruntimeconfig.cache
+C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts.Core\obj\Debug\net6.0\ref\TACShilohDistricts.Core.dll
