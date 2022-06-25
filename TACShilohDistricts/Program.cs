@@ -1,7 +1,16 @@
+using TACShilohDistricts;
+using TACShilohDistricts.Extensions;
+
 var builder = WebApplication.CreateBuilder(args);
+
+//using (var scope = builder.Services.CreateScope())
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+var startup = new Startup(builder.Configuration, builder.Environment);
+startup.ConfigureServices(builder.Services);
+
 
 var app = builder.Build();
 
