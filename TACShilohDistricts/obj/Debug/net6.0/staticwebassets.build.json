@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "frA8Lgco70CYnjQgj5pYCVaiwR9ddYWhXlVMztXex1g=",
+  "Hash": "aEsAeK3sfbMMvvtnVIz2Rng1M9eMsyNYUCFlhY2mLgs=",
   "Source": "TACShilohDistricts",
   "BasePath": "_content/TACShilohDistricts",
   "Mode": "Default",
@@ -340,23 +340,6 @@
       "OriginalItemSpec": "wwwroot\\contents\\images\\favicon.jpg"
     },
     {
-      "Identity": "C:\\Users\\GIGLogistics\\Documents\\Portfolio\\TACShilohDistricts\\TACShilohDistricts\\wwwroot\\contents\\images\\favicon1.png",
-      "SourceId": "TACShilohDistricts",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\GIGLogistics\\Documents\\Portfolio\\TACShilohDistricts\\TACShilohDistricts\\wwwroot\\",
-      "BasePath": "_content/TACShilohDistricts",
-      "RelativePath": "contents/images/favicon1.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\contents\\images\\favicon1.png"
-    },
-    {
       "Identity": "C:\\Users\\GIGLogistics\\Documents\\Portfolio\\TACShilohDistricts\\TACShilohDistricts\\wwwroot\\contents\\images\\footer-logo.png",
       "SourceId": "TACShilohDistricts",
       "SourceType": "Discovered",
@@ -542,23 +525,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\contents\\images\\icon-image\\service-icon6.png"
-    },
-    {
-      "Identity": "C:\\Users\\GIGLogistics\\Documents\\Portfolio\\TACShilohDistricts\\TACShilohDistricts\\wwwroot\\contents\\images\\logo.png",
-      "SourceId": "TACShilohDistricts",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\GIGLogistics\\Documents\\Portfolio\\TACShilohDistricts\\TACShilohDistricts\\wwwroot\\",
-      "BasePath": "_content/TACShilohDistricts",
-      "RelativePath": "contents/images/logo.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\contents\\images\\logo.png"
     },
     {
       "Identity": "C:\\Users\\GIGLogistics\\Documents\\Portfolio\\TACShilohDistricts\\TACShilohDistricts\\wwwroot\\contents\\images\\logo2.jpg",
