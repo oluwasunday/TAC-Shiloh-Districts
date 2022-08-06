@@ -128,7 +128,7 @@ namespace TACShilohDistricts.Infrastructure.Repositories.Base
             return _context.Set<TEntity>().AnyAsync(predicate);
         }
 
-        public Task<IEnumerable<TEntity>> FindAsync(Expression<Func<TEntity, bool>> predicate, string[] includeProperties)
+        public  Task<IEnumerable<TEntity>> FindAsync(Expression<Func<TEntity, bool>> predicate, string[] includeProperties)
         {
             IQueryable<TEntity> query = _context.Set<TEntity>();
 
@@ -139,7 +139,7 @@ namespace TACShilohDistricts.Infrastructure.Repositories.Base
                     query = query.Include(includeProperty);
                 }
             }
-            return Task.FromResult<IEnumerable<TEntity>>(query.Where(predicate).ToList());
+            return Task.FromResult<IEnumerable<TEntity>>((IEnumerable<TEntity>)query.Where(predicate).ToListAsync());
         }
 
         private IQueryable<TEntity> _IncludeProperties(IQueryable<TEntity> query, string properties)
