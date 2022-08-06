@@ -8,11 +8,11 @@
 
   <ItemGroup>
     <Folder Include="Handlers\" />
-    <Folder Include="Mapper\" />
     <Folder Include="FluentValidations\" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.3" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>

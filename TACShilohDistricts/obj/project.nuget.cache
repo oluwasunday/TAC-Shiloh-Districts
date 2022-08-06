@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "iqI+kfhoCF2Bc3QqlS8ucp53fd0zB+Ycy+KH4LGw7i/NkArq4ictE/b98dtYZCW0jeXJdExSbwKcKING1WzvDA==",
+  "dgSpecHash": "HXM3xu2yICG/u4OVbIV1AOmLu/E1tU4ja6JzFLcVnHT+pe71lYJaDu3GJYFdiWbwyQ+VhpsY9mbDBcqrjJ93Pg==",
   "success": true,
   "projectFilePath": "C:\\Users\\GIGLogistics\\Documents\\Portfolio\\TACShilohDistricts\\TACShilohDistricts\\TACShilohDistricts.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\GIGLogistics\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
+    "C:\\Users\\GIGLogistics\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "C:\\Users\\GIGLogistics\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\GIGLogistics\\.nuget\\packages\\mailkit\\3.2.0\\mailkit.3.2.0.nupkg.sha512",
     "C:\\Users\\GIGLogistics\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
@@ -33,7 +35,7 @@
     "C:\\Users\\GIGLogistics\\.nuget\\packages\\microsoft.codeanalysis.visualbasic.workspaces\\4.0.0\\microsoft.codeanalysis.visualbasic.workspaces.4.0.0.nupkg.sha512",
     "C:\\Users\\GIGLogistics\\.nuget\\packages\\microsoft.codeanalysis.workspaces.common\\4.0.0\\microsoft.codeanalysis.workspaces.common.4.0.0.nupkg.sha512",
     "C:\\Users\\GIGLogistics\\.nuget\\packages\\microsoft.codeanalysis.workspaces.msbuild\\4.0.0\\microsoft.codeanalysis.workspaces.msbuild.4.0.0.nupkg.sha512",
-    "C:\\Users\\GIGLogistics\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\GIGLogistics\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\GIGLogistics\\.nuget\\packages\\microsoft.diasymreader\\1.3.0\\microsoft.diasymreader.1.3.0.nupkg.sha512",
     "C:\\Users\\GIGLogistics\\.nuget\\packages\\microsoft.dotnet.scaffolding.shared\\6.0.6\\microsoft.dotnet.scaffolding.shared.6.0.6.nupkg.sha512",
     "C:\\Users\\GIGLogistics\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.3\\microsoft.entityframeworkcore.6.0.3.nupkg.sha512",
