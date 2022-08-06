@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "aEsAeK3sfbMMvvtnVIz2Rng1M9eMsyNYUCFlhY2mLgs=",
+  "Hash": "XzYbFaTRPqr0BDdt25BqU0BLPasCeG3OK6EPymGPmAg=",
   "Source": "TACShilohDistricts",
   "BasePath": "_content/TACShilohDistricts",
   "Mode": "Default",
@@ -134,6 +134,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\contents\\images\\banner\\banner2.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\GIGLogistics\\Documents\\Portfolio\\TACShilohDistricts\\TACShilohDistricts\\wwwroot\\contents\\images\\banner\\contact_us_banner.jpg",
+      "SourceId": "TACShilohDistricts",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\GIGLogistics\\Documents\\Portfolio\\TACShilohDistricts\\TACShilohDistricts\\wwwroot\\",
+      "BasePath": "_content/TACShilohDistricts",
+      "RelativePath": "contents/images/banner/contact_us_banner.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\contents\\images\\banner\\contact_us_banner.jpg"
     },
     {
       "Identity": "C:\\Users\\GIGLogistics\\Documents\\Portfolio\\TACShilohDistricts\\TACShilohDistricts\\wwwroot\\contents\\images\\banner\\our-belief.jpg",
