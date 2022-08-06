@@ -10,5 +10,6 @@ namespace TACShilohDistricts.Core.IRepositories
 {
     public interface IContactUsRepository : IRepository<ContactUs>
     {
+
     }
 }

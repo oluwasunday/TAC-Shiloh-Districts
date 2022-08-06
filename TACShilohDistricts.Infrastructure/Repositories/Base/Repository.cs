@@ -103,14 +103,14 @@ namespace TACShilohDistricts.Infrastructure.Repositories.Base
             return _context.Set<TEntity>().SingleOrDefault(predicate);
         }
 
-        public void Add(TEntity entity)
+        public async Task AddAsync(TEntity entity)
         {
-            _context.Set<TEntity>().Add(entity);
+            await _context.Set<TEntity>().AddAsync(entity);
         }
 
-        public void AddRange(IEnumerable<TEntity> entities)
+        public async void AddRangeAsync(IEnumerable<TEntity> entities)
         {
-            _context.Set<TEntity>().AddRange(entities);
+            await _context.Set<TEntity>().AddRangeAsync(entities);
         }
 
         public void Remove(TEntity entity)

@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Builder;
+using TACShilohDistricts.Application.Mapper;
 using TACShilohDistricts.Extensions;
 
 namespace TACShilohDistricts
@@ -21,6 +22,12 @@ namespace TACShilohDistricts
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContextAndConfigurations(Environment, Configuration);
+
+            // Register Dependency Injection Service Extension
+            services.AddDependencyInjection();
+
+            // Auto mapper
+            services.AddAutoMapper(typeof(AutoMapperIntializer));
         }
 
         public void Configure(IApplicationBuilder app)
