@@ -8,8 +8,8 @@ namespace TACShilohDistricts.Core.IRepositories
 {
     public interface IUnitOfWork : IDisposable
     {
-        IContactUsRepository ContactUs { get; set; }
-        Task Save();
+        IContactUsRepository ContactUs { get; }
+        Task CompleteAsync();
         
     }
 }

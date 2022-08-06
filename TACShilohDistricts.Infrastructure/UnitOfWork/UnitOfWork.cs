@@ -1,26 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TACShilohDistricts.Core.IRepositories;
+﻿using TACShilohDistricts.Core.IRepositories;
+using TACShilohDistricts.Infrastructure.Data;
+using TACShilohDistricts.Infrastructure.Repositories;
 
 namespace TACShilohDistricts.Infrastructure.UnitOfWork
 {
     public class UnitOfWork : IUnitOfWork
     {
-        private IContactUsRepository _contactUs;
+        public IContactUsRepository ContactUs { get; }
+        private readonly TACShilohContext _context;
 
-        public IContactUsRepository ContactUs { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public UnitOfWork(TACShilohContext context)
+        {
+            _context = context;
+            ContactUs = new ContactUsRepository(_context);
+        }
+
+        public async Task CompleteAsync()
+        {
+            await _context.SaveChangesAsync();
+        }
 
         public void Dispose()
         {
-            throw new NotImplementedException();
-        }
-
-        public Task Save()
-        {
-            throw new NotImplementedException();
+            _context.Dispose();
+            GC.SuppressFinalize(this);
         }
     }
 }
