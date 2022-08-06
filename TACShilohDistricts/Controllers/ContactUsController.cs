@@ -1,10 +1,18 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using TACShilohDistricts.Core;
 using TACShilohDistricts.Core.DTOs;
 
 namespace TACShilohDistricts.Controllers
 {
     public class ContactUsController : Controller
     {
+        private readonly IContactUsService _contact;
+
+        public ContactUsController(IContactUsService contact)
+        {
+            _contact = contact;
+        }
+
         public IActionResult Index()
         {
             return View();
@@ -13,18 +21,15 @@ namespace TACShilohDistricts.Controllers
         // POST: ContactUs/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(ContactUsDto dto)
+        public async Task<IActionResult> Create(ContactUsDto dto)
         {
-            try
-            {
-                return Ok();
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex);
-                return RedirectToAction("Index");
-            }
             
+            var result = await _contact.AddContactUsAsync(dto);
+            if (result.Succeeded)
+            {
+                return RedirectToAction("Index", "ContactUs");
+            }
+            return BadRequest(dto);
         }
     }
 }

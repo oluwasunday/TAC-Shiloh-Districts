@@ -32,6 +32,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\TACShilohDistricts.Application\TACShilohDistricts.Application.csproj" />
     <ProjectReference Include="..\TACShilohDistricts.Core\TACShilohDistricts.Core.csproj" />
   </ItemGroup>
 

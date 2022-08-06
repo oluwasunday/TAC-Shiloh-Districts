@@ -10,3 +10,6 @@ C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts.
 C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts.Application\obj\Debug\net6.0\refint\TACShilohDistricts.Application.dll
 C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts.Application\obj\Debug\net6.0\TACShilohDistricts.Application.pdb
 C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts.Application\obj\Debug\net6.0\ref\TACShilohDistricts.Application.dll
+C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts.Application\bin\Debug\net6.0\TACShilohDistricts.Core.dll
+C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts.Application\bin\Debug\net6.0\TACShilohDistricts.Core.pdb
+C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts.Application\obj\Debug\net6.0\TACShilohDistricts.Application.csproj.CopyComplete

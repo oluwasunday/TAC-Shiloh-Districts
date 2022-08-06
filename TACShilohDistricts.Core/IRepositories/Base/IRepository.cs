@@ -84,13 +84,13 @@ namespace TACShilohDistricts.Core.IRepositories.Base
         /// Add single entity to database
         /// </summary>
         /// <param name="entity"></param>
-        void Add(TEntity entity);
+        Task AddAsync(TEntity entity);
 
         /// <summary>
         /// Adds range of entities to database
         /// </summary>
         /// <param name="entities"></param>
-        void AddRange(IEnumerable<TEntity> entities);
+        void AddRangeAsync(IEnumerable<TEntity> entities);
 
         /// <summary>
         /// Removes entity from database

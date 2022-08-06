@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
 
-namespace TACShilohDistricts.Application.Handlers
+namespace TACShilohDistricts.Core.Handlers
 {
     public class Response<T>
     {
