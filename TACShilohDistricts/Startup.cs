@@ -21,6 +21,9 @@ namespace TACShilohDistricts
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContextAndConfigurations(Environment, Configuration);
+
+            // Register Dependency Injection Service Extension
+            services.AddDependencyInjection();
         }
 
         public void Configure(IApplicationBuilder app)
