@@ -23,10 +23,10 @@ namespace TACShilohDistricts.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(ContactUsDto dto)
         {
-            
             var result = await _contact.AddContactUsAsync(dto);
             if (result.Succeeded)
             {
+                TempData["Response"] = "sent";
                 return RedirectToAction("Index", "ContactUs");
             }
             return BadRequest(dto);

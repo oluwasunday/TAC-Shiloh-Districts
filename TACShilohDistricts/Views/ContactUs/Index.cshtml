@@ -116,8 +116,12 @@
             <label>Message</label>
             <textarea class="form-control form-control-message" name="Message" id="Message" placeholder="" rows="10" required></textarea>
           </div>
+          
+            <input name="Message" id="uploadBox" value="@ViewBag.Contact" placeholder="" rows="10" hidden=""/>
+          
           <div class="text-right"><br>
             <button class="btn btn-primary solid blank" type="submit">Send Message</button>
+            @*<button class="btn btn-primary solid blank" type="button" onclick="return sentSuccess()">test</button>*@
           </div>
         </form>
       </div>
@@ -125,3 +129,19 @@
     </div><!-- Content row -->
   </div><!-- Conatiner end -->
 </section><!-- Main container end -->
+
+<script type="text/javascript">
+    window.onload = function () {
+        var response = '@TempData["Response"]';
+        if (response === "sent") {
+            swal({
+                title: "Success!",
+                text: "Message sent successfully!",
+                icon: "success",
+                button: "OK!",
+            });
+            return false;
+        }
+        return true;
+    }
+</script>
