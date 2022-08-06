@@ -12,3 +12,8 @@ C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts.
 C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts.Services\obj\Debug\net6.0\TACShilohDistricts.Services.pdb
 C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts.Services\obj\Debug\net6.0\TACShilohDistricts.Services.genruntimeconfig.cache
 C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts.Services\obj\Debug\net6.0\ref\TACShilohDistricts.Services.dll
+C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts.Services\bin\Debug\net6.0\TACShilohDistricts.Application.dll
+C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts.Services\bin\Debug\net6.0\TACShilohDistricts.Core.dll
+C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts.Services\bin\Debug\net6.0\TACShilohDistricts.Application.pdb
+C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts.Services\bin\Debug\net6.0\TACShilohDistricts.Core.pdb
+C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts.Services\obj\Debug\net6.0\TACShilohDistricts.Services.csproj.CopyComplete
