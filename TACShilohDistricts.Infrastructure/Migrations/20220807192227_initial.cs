@@ -1,28 +1,33 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
+using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
 namespace TACShilohDistricts.Infrastructure.Migrations
 {
-    public partial class second : Migration
+    public partial class initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.AddColumn<bool>(
-                name: "IsDeleted",
-                table: "ContactUs",
-                type: "boolean",
-                nullable: false,
-                defaultValue: false);
-
-            migrationBuilder.AddColumn<byte[]>(
-                name: "RowVersion",
-                table: "ContactUs",
-                type: "bytea",
-                rowVersion: true,
-                nullable: false,
-                defaultValue: new byte[0]);
+            migrationBuilder.CreateTable(
+                name: "ContactUs",
+                columns: table => new
+                {
+                    Id = table.Column<string>(type: "text", nullable: false),
+                    Name = table.Column<string>(type: "text", nullable: true),
+                    Email = table.Column<string>(type: "text", nullable: true),
+                    Subject = table.Column<string>(type: "text", nullable: true),
+                    Message = table.Column<string>(type: "text", nullable: true),
+                    CreatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
+                    UpdatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
+                    IsDeleted = table.Column<bool>(type: "boolean", nullable: false),
+                    RowVersion = table.Column<byte[]>(type: "bytea", rowVersion: true, nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ContactUs", x => x.Id);
+                });
 
             migrationBuilder.CreateTable(
                 name: "Events",
@@ -59,6 +64,26 @@ namespace TACShilohDistricts.Infrastructure.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_News", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "PrayerRequests",
+                columns: table => new
+                {
+                    PrayerRequestId = table.Column<int>(type: "integer", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    Name = table.Column<string>(type: "character varying(60)", maxLength: 60, nullable: false),
+                    Email = table.Column<string>(type: "text", nullable: false),
+                    Subject = table.Column<string>(type: "character varying(100)", maxLength: 100, nullable: false),
+                    Request = table.Column<string>(type: "text", nullable: false),
+                    CreatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
+                    UpdatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
+                    IsDeleted = table.Column<bool>(type: "boolean", nullable: false),
+                    RowVersion = table.Column<byte[]>(type: "bytea", rowVersion: true, nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_PrayerRequests", x => x.PrayerRequestId);
                 });
 
             migrationBuilder.CreateTable(
@@ -116,21 +141,19 @@ namespace TACShilohDistricts.Infrastructure.Migrations
                 name: "Comments");
 
             migrationBuilder.DropTable(
+                name: "ContactUs");
+
+            migrationBuilder.DropTable(
                 name: "Events");
+
+            migrationBuilder.DropTable(
+                name: "PrayerRequests");
 
             migrationBuilder.DropTable(
                 name: "Testimonies");
 
             migrationBuilder.DropTable(
                 name: "News");
-
-            migrationBuilder.DropColumn(
-                name: "IsDeleted",
-                table: "ContactUs");
-
-            migrationBuilder.DropColumn(
-                name: "RowVersion",
-                table: "ContactUs");
         }
     }
 }

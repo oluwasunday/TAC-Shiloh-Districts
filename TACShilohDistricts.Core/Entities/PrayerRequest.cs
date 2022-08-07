@@ -1,15 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace TACShilohDistricts.Core.Entities
 {
-    public class PrayerRequest : BaseEntity
+    public class PrayerRequest
     {
-        public new int Id { get; set; } 
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int PrayerRequestId { get; set; }
         [Required]
         [StringLength(60)]
         public string Name { get; set; }
@@ -21,5 +24,11 @@ namespace TACShilohDistricts.Core.Entities
         public string Subject { get; set; }
         [Required]
         public string Request { get; set; }
+        
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+        public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
+        public bool IsDeleted { get; set; }
+        [Timestamp]
+        public byte[]? RowVersion { get; set; }
     }
 }

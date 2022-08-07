@@ -24,7 +24,7 @@ namespace TACShilohDistricts.Services.Services
 
             if (contact != null)
             {
-                await _unitOfWork.ContactUs.AddAsync(contact);
+                _unitOfWork.ContactUs.Add(contact);
                 await _unitOfWork.CompleteAsync();
 
                 return Response<ContactUs>.Success("success", contact);

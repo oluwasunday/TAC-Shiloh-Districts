@@ -7,12 +7,15 @@ namespace TACShilohDistricts.Infrastructure.UnitOfWork
     public class UnitOfWork : IUnitOfWork
     {
         public IContactUsRepository ContactUs { get; }
+        public IPrayerRequestRepository PrayerRequest { get; }
+
         private readonly TACShilohContext _context;
 
         public UnitOfWork(TACShilohContext context)
         {
             _context = context;
             ContactUs = new ContactUsRepository(_context);
+            PrayerRequest = new PrayerRequestRepository(_context);
         }
 
         public async Task CompleteAsync()

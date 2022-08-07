@@ -9,6 +9,7 @@ namespace TACShilohDistricts.Core.IRepositories
     public interface IUnitOfWork : IDisposable
     {
         IContactUsRepository ContactUs { get; }
+        IPrayerRequestRepository PrayerRequest { get; }
         Task CompleteAsync();
         
     }

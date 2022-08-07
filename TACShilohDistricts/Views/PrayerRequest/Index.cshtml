@@ -1,0 +1,101 @@
+﻿
+@{
+    ViewData["Title"] = "Prayer Request";
+}
+
+<!-- Header end -->
+<div id="banner-area" class="banner-area" style="background-image:url('contents/images/banner/contact_us_banner.jpg')">
+    <div class="banner-text">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="banner-heading">
+                        <h1 class="banner-title">@ViewData["Title"]</h1>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb justify-content-center">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">@ViewData["Title"]</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div><!-- Col end -->
+            </div><!-- Row end -->
+        </div><!-- Container end -->
+    </div><!-- Banner text end -->
+</div><!-- Banner area end --> 
+
+
+<section id="main-container" class="main-container">
+  <div class="container">
+
+    <div class="row text-center">
+      <div class="col-12">
+          <h2 class="section-title">If you want us to help you with our prayers, please get it to us through the form below and we will prayerfully attend to your request.</h2>
+          <h3 class="section-sub-title">THE APOSTOLIC CHURCH, NIGERIA Shiloh District</h3>
+      </div>
+    </div>
+    <!--/ Title row end -->
+
+    <div class="gap-40"></div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="column-title">Prayer Request Form</h3>
+        <!-- contact form works with formspree.io  -->
+        <!-- contact form activation doc: https://docs.themefisher.com/constra/contact-form/ -->
+        <form id="contact-form" asp-controller="PrayerRequest" asp-action="Create" method="post" role="form">
+          <div class="error-container"></div>
+          <div class="row">
+            <div class="col-md-12 col-lg-12">
+              <div class="form-group">
+                <label>Name</label>
+                <input class="form-control form-control-name" name="Name" id="Name" placeholder="Full name" type="text" required>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-12">
+              <div class="form-group">
+                <label>Email</label>
+                <input class="form-control form-control-email" name="Email" id="Email" placeholder="Valid email" type="email" required>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-12">
+              <div class="form-group">
+                <label>Subject</label>
+                <input class="form-control form-control-subject" name="Subject" id="Subject" placeholder="Message subject" required>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Request</label>
+            <textarea class="form-control form-control-request" name="Request" id="Request" placeholder="" rows="10" required></textarea>
+          </div>
+          
+            <input name="Message" id="uploadBox" value="@ViewBag.Contact" placeholder="" rows="10" hidden=""/>
+          
+          <div class="text-right"><br>
+            <button class="btn btn-primary solid blank" type="submit">Send Message</button>
+          </div>
+        </form>
+      </div>
+
+    </div><!-- Content row -->
+  </div><!-- Conatiner end -->
+</section><!-- Main container end -->
+
+
+
+<script type="text/javascript">
+    window.onload = function () {
+        var response = '@TempData["Response"]';
+        if (response === "success") {
+            swal({
+                title: "Success!",
+                text: "Message sent successfully!",
+                icon: "success",
+                button: "OK!",
+            });
+            return false;
+        }
+        return true;
+    }
+</script>
