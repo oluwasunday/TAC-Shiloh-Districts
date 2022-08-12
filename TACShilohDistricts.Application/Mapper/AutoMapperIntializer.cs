@@ -14,6 +14,7 @@ namespace TACShilohDistricts.Application.Mapper
         public AutoMapperIntializer()
         {
             CreateMap<ContactUs, ContactUsDto>().ReverseMap();
+            CreateMap<PrayerRequest, PrayerRequestDto>().ReverseMap();
         }
     }
 }

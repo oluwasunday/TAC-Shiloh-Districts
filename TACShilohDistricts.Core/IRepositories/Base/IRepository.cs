@@ -84,7 +84,7 @@ namespace TACShilohDistricts.Core.IRepositories.Base
         /// Add single entity to database
         /// </summary>
         /// <param name="entity"></param>
-        Task AddAsync(TEntity entity);
+        void Add(TEntity entity);
 
         /// <summary>
         /// Adds range of entities to database
