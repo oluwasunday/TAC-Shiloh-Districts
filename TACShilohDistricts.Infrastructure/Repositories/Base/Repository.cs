@@ -103,9 +103,9 @@ namespace TACShilohDistricts.Infrastructure.Repositories.Base
             return _context.Set<TEntity>().SingleOrDefault(predicate);
         }
 
-        public async Task AddAsync(TEntity entity)
+        public void Add(TEntity entity)
         {
-            await _context.Set<TEntity>().AddAsync(entity);
+            _context.Set<TEntity>().Add(entity);
         }
 
         public async void AddRangeAsync(IEnumerable<TEntity> entities)

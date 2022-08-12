@@ -1,5 +1,6 @@
 ﻿using TACShilohDistricts.Core;
 using TACShilohDistricts.Core.IRepositories;
+using TACShilohDistricts.Core.IServices;
 using TACShilohDistricts.Infrastructure.UnitOfWork;
 using TACShilohDistricts.Services.Services;
 
@@ -14,6 +15,7 @@ namespace TACShilohDistricts.Extensions
 
             // all services
             services.AddScoped<IContactUsService, ContactUsService>();
+            services.AddScoped<IPrayerRequestService, PrayerRequestService>();
         }
     }
 }

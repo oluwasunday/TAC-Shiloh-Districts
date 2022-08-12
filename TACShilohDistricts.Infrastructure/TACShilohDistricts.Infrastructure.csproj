@@ -31,8 +31,4 @@
     <ProjectReference Include="..\TACShilohDistricts.Core\TACShilohDistricts.Core.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="UnitOfWork\Implementation\" />
-  </ItemGroup>
-
 </Project>
