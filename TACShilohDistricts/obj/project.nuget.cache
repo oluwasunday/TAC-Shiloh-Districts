@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "9Z83QnCfrO9VgVShSHNVAUxrR5ANwAhc9Q2EfCnKMlSrMloUZf86nmP2vQVxm9RTnSNibfzCMQM8MIaKV9j4Vw==",
+  "dgSpecHash": "7gVDI3SsWkY1+0geOdWwYlRd3SWB+kbInqj0rrygYdr6bBaTuEp3CDqpR8XasUZXUuMzELcTtgsYGSkGCKo/Cw==",
   "success": true,
   "projectFilePath": "C:\\Users\\GIGLogistics\\Documents\\Portfolio\\TACShilohDistricts\\TACShilohDistricts\\TACShilohDistricts.csproj",
   "expectedPackageFiles": [
@@ -67,6 +67,7 @@
     "C:\\Users\\GIGLogistics\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.2\\microsoft.netcore.platforms.2.1.2.nupkg.sha512",
     "C:\\Users\\GIGLogistics\\.nuget\\packages\\microsoft.netcore.targets\\1.1.3\\microsoft.netcore.targets.1.1.3.nupkg.sha512",
     "C:\\Users\\GIGLogistics\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\GIGLogistics\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.17.0\\microsoft.visualstudio.azure.containers.tools.targets.1.17.0.nupkg.sha512",
     "C:\\Users\\GIGLogistics\\.nuget\\packages\\microsoft.visualstudio.debugger.contracts\\17.2.0\\microsoft.visualstudio.debugger.contracts.17.2.0.nupkg.sha512",
     "C:\\Users\\GIGLogistics\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration\\6.0.7\\microsoft.visualstudio.web.codegeneration.6.0.7.nupkg.sha512",
     "C:\\Users\\GIGLogistics\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.core\\6.0.7\\microsoft.visualstudio.web.codegeneration.core.6.0.7.nupkg.sha512",
