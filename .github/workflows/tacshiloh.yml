@@ -1,0 +1,21 @@
+on:
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: tac shiloh assemblies
+      env:
+        HEROKU_API_KEY: 1d49dd31-776d-4d24-b84c-a5e71be8a54a
+        APP_NAME: tacshilohassemblies
+      run: |
+        docker build -t tacshilohassemblies .
+        docker tag tacshilohassemblies registry.heroku.com
+        docker login --username=_ --password=$HEROKU_API_KEY registry.heroku.com
+        heroku container:push web -a $APP_NAME
+        heroku container:release web -a $APP_NAME
