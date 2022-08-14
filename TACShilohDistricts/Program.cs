@@ -33,4 +33,5 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
+string? port = Environment.GetEnvironmentVariable("PORT"); if (!string.IsNullOrWhiteSpace(port)) { app.Urls.Add("http://*:" + port); }
 app.Run();
