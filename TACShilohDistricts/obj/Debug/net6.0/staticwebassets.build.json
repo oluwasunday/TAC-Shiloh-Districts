@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "XzYbFaTRPqr0BDdt25BqU0BLPasCeG3OK6EPymGPmAg=",
+  "Hash": "CNo/XtRL3z5JuSLezb+uQifAFqmWICxfMB66FMWLNPg=",
   "Source": "TACShilohDistricts",
   "BasePath": "_content/TACShilohDistricts",
   "Mode": "Default",
@@ -544,6 +544,23 @@
       "OriginalItemSpec": "wwwroot\\contents\\images\\icon-image\\service-icon6.png"
     },
     {
+      "Identity": "C:\\Users\\GIGLogistics\\Documents\\Portfolio\\TACShilohDistricts\\TACShilohDistricts\\wwwroot\\contents\\images\\logo.jpg",
+      "SourceId": "TACShilohDistricts",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\GIGLogistics\\Documents\\Portfolio\\TACShilohDistricts\\TACShilohDistricts\\wwwroot\\",
+      "BasePath": "_content/TACShilohDistricts",
+      "RelativePath": "contents/images/logo.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\contents\\images\\logo.jpg"
+    },
+    {
       "Identity": "C:\\Users\\GIGLogistics\\Documents\\Portfolio\\TACShilohDistricts\\TACShilohDistricts\\wwwroot\\contents\\images\\logo2.jpg",
       "SourceId": "TACShilohDistricts",
       "SourceType": "Discovered",
@@ -1003,12 +1020,12 @@
       "OriginalItemSpec": "wwwroot\\contents\\images\\slider-main\\bg2.jpg"
     },
     {
-      "Identity": "C:\\Users\\GIGLogistics\\Documents\\Portfolio\\TACShilohDistricts\\TACShilohDistricts\\wwwroot\\contents\\images\\slider-main\\connectwithus.JPG",
+      "Identity": "C:\\Users\\GIGLogistics\\Documents\\Portfolio\\TACShilohDistricts\\TACShilohDistricts\\wwwroot\\contents\\images\\slider-main\\connectwithus.jpg",
       "SourceId": "TACShilohDistricts",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\GIGLogistics\\Documents\\Portfolio\\TACShilohDistricts\\TACShilohDistricts\\wwwroot\\",
       "BasePath": "_content/TACShilohDistricts",
-      "RelativePath": "contents/images/slider-main/connectwithus.JPG",
+      "RelativePath": "contents/images/slider-main/connectwithus.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1017,7 +1034,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\contents\\images\\slider-main\\connectwithus.JPG"
+      "OriginalItemSpec": "wwwroot\\contents\\images\\slider-main\\connectwithus.jpg"
     },
     {
       "Identity": "C:\\Users\\GIGLogistics\\Documents\\Portfolio\\TACShilohDistricts\\TACShilohDistricts\\wwwroot\\contents\\images\\slider-main\\gvtv.JPG",
@@ -1054,12 +1071,12 @@
       "OriginalItemSpec": "wwwroot\\contents\\images\\slider-main\\sau.JPG"
     },
     {
-      "Identity": "C:\\Users\\GIGLogistics\\Documents\\Portfolio\\TACShilohDistricts\\TACShilohDistricts\\wwwroot\\contents\\images\\slider-main\\watchlive.JPG",
+      "Identity": "C:\\Users\\GIGLogistics\\Documents\\Portfolio\\TACShilohDistricts\\TACShilohDistricts\\wwwroot\\contents\\images\\slider-main\\watchlive.jpg",
       "SourceId": "TACShilohDistricts",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\GIGLogistics\\Documents\\Portfolio\\TACShilohDistricts\\TACShilohDistricts\\wwwroot\\",
       "BasePath": "_content/TACShilohDistricts",
-      "RelativePath": "contents/images/slider-main/watchlive.JPG",
+      "RelativePath": "contents/images/slider-main/watchlive.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1068,7 +1085,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\contents\\images\\slider-main\\watchlive.JPG"
+      "OriginalItemSpec": "wwwroot\\contents\\images\\slider-main\\watchlive.jpg"
     },
     {
       "Identity": "C:\\Users\\GIGLogistics\\Documents\\Portfolio\\TACShilohDistricts\\TACShilohDistricts\\wwwroot\\contents\\images\\slider-pages\\1st Shiloh District Apostle.jpg",
