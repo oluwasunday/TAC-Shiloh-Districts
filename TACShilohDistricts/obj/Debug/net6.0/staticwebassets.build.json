@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "CNo/XtRL3z5JuSLezb+uQifAFqmWICxfMB66FMWLNPg=",
+  "Hash": "hHfjP51GzxegutRuxGVcc2UlFCQtOTdjyVX3SA57YuY=",
   "Source": "TACShilohDistricts",
   "BasePath": "_content/TACShilohDistricts",
   "Mode": "Default",
@@ -1020,12 +1020,12 @@
       "OriginalItemSpec": "wwwroot\\contents\\images\\slider-main\\bg2.jpg"
     },
     {
-      "Identity": "C:\\Users\\GIGLogistics\\Documents\\Portfolio\\TACShilohDistricts\\TACShilohDistricts\\wwwroot\\contents\\images\\slider-main\\connectwithus.jpg",
+      "Identity": "C:\\Users\\GIGLogistics\\Documents\\Portfolio\\TACShilohDistricts\\TACShilohDistricts\\wwwroot\\contents\\images\\slider-main\\bg3.jpg",
       "SourceId": "TACShilohDistricts",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\GIGLogistics\\Documents\\Portfolio\\TACShilohDistricts\\TACShilohDistricts\\wwwroot\\",
       "BasePath": "_content/TACShilohDistricts",
-      "RelativePath": "contents/images/slider-main/connectwithus.jpg",
+      "RelativePath": "contents/images/slider-main/bg3.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1034,7 +1034,24 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\contents\\images\\slider-main\\connectwithus.jpg"
+      "OriginalItemSpec": "wwwroot\\contents\\images\\slider-main\\bg3.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\GIGLogistics\\Documents\\Portfolio\\TACShilohDistricts\\TACShilohDistricts\\wwwroot\\contents\\images\\slider-main\\bg4.jpg",
+      "SourceId": "TACShilohDistricts",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\GIGLogistics\\Documents\\Portfolio\\TACShilohDistricts\\TACShilohDistricts\\wwwroot\\",
+      "BasePath": "_content/TACShilohDistricts",
+      "RelativePath": "contents/images/slider-main/bg4.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\contents\\images\\slider-main\\bg4.jpg"
     },
     {
       "Identity": "C:\\Users\\GIGLogistics\\Documents\\Portfolio\\TACShilohDistricts\\TACShilohDistricts\\wwwroot\\contents\\images\\slider-main\\gvtv.JPG",
@@ -1069,23 +1086,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\contents\\images\\slider-main\\sau.JPG"
-    },
-    {
-      "Identity": "C:\\Users\\GIGLogistics\\Documents\\Portfolio\\TACShilohDistricts\\TACShilohDistricts\\wwwroot\\contents\\images\\slider-main\\watchlive.jpg",
-      "SourceId": "TACShilohDistricts",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\GIGLogistics\\Documents\\Portfolio\\TACShilohDistricts\\TACShilohDistricts\\wwwroot\\",
-      "BasePath": "_content/TACShilohDistricts",
-      "RelativePath": "contents/images/slider-main/watchlive.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\contents\\images\\slider-main\\watchlive.jpg"
     },
     {
       "Identity": "C:\\Users\\GIGLogistics\\Documents\\Portfolio\\TACShilohDistricts\\TACShilohDistricts\\wwwroot\\contents\\images\\slider-pages\\1st Shiloh District Apostle.jpg",
