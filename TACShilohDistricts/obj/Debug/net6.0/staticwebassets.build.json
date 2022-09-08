@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hHfjP51GzxegutRuxGVcc2UlFCQtOTdjyVX3SA57YuY=",
+  "Hash": "CBNNh1HbTfhjUQjnQl9ZKq7uB8loUdIbr23iEZWWW0U=",
   "Source": "TACShilohDistricts",
   "BasePath": "_content/TACShilohDistricts",
   "Mode": "Default",
@@ -1086,6 +1086,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\contents\\images\\slider-main\\sau.JPG"
+    },
+    {
+      "Identity": "C:\\Users\\GIGLogistics\\Documents\\Portfolio\\TACShilohDistricts\\TACShilohDistricts\\wwwroot\\contents\\images\\slider-main\\sunday-oladejo.jpg",
+      "SourceId": "TACShilohDistricts",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\GIGLogistics\\Documents\\Portfolio\\TACShilohDistricts\\TACShilohDistricts\\wwwroot\\",
+      "BasePath": "_content/TACShilohDistricts",
+      "RelativePath": "contents/images/slider-main/sunday-oladejo.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\contents\\images\\slider-main\\sunday-oladejo.jpg"
     },
     {
       "Identity": "C:\\Users\\GIGLogistics\\Documents\\Portfolio\\TACShilohDistricts\\TACShilohDistricts\\wwwroot\\contents\\images\\slider-pages\\1st Shiloh District Apostle.jpg",
