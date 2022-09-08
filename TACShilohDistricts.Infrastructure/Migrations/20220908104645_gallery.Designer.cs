@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using TACShilohDistricts.Infrastructure.Data;
@@ -11,9 +12,10 @@ using TACShilohDistricts.Infrastructure.Data;
 namespace TACShilohDistricts.Infrastructure.Migrations
 {
     [DbContext(typeof(TACShilohContext))]
-    partial class TACShilohContextModelSnapshot : ModelSnapshot
+    [Migration("20220908104645_gallery")]
+    partial class gallery
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
