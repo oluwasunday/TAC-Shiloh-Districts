@@ -13,5 +13,15 @@ namespace TACShilohDistricts.Controllers
         {
             return View();
         }
+        
+        public IActionResult VideoStreams()
+        {
+            return View();
+        }
+        
+        public IActionResult Index()
+        {
+            return View();
+        }
     }
 }
