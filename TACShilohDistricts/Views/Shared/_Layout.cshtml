@@ -128,7 +128,8 @@
                                   <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Media <i class="fa fa-angle-down"></i></a>
                                   <ul class="dropdown-menu" role="menu">
                                     <li><a asp-controller="Media" asp-action="Index">Gallery</a></li>
-                                    <li><a asp-controller="VideoStreams" asp-action="Index">Video Stream</a></li>
+                                    <!-- <li><a asp-controller="VideoStreams" asp-action="Index">Video Stream</a></li> -->
+                                    <li><a href="https://youtube.com/channel/UCbSztBy03389dwYPEu6iTAQ" target="_blank">Video Stream</a></li>
                                   </ul>
                               </li>
               
@@ -136,7 +137,7 @@
                                   <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Quick Links <i class="fa fa-angle-down"></i></a>
                                   <ul class="dropdown-menu" role="menu">
                                     <li><a asp-controller="QuickLinks" asp-action="NewsAndEvents">News/Events</a></li>
-                                    <li><a href="#">Testimonies</a></li>
+                                    <li><a asp-controller="Testimonies" asp-action="Index">Testimonies</a></li>
                                     <li><a asp-controller="PrayerRequest" asp-action="Index">Prayer Request</a></li>
                                   </ul>
                               </li>
