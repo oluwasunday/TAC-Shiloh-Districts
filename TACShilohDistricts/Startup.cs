@@ -1,6 +1,10 @@
 ﻿using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using TACShilohDistricts.Application.Mapper;
 using TACShilohDistricts.Extensions;
+using TACShilohDistricts.Infrastructure.Data;
+using TACShilohDistricts.Infrastructure.Seeding;
 
 namespace TACShilohDistricts
 {
@@ -30,9 +34,13 @@ namespace TACShilohDistricts
             services.AddAutoMapper(typeof(AutoMapperIntializer));
         }
 
-        public void Configure(IApplicationBuilder app)
+        public void Configure(IApplicationBuilder app, TACShilohContext dbContext)
         {
             // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
+
+            AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
+
+            TACSeeder.SeedData(dbContext).GetAwaiter().GetResult();
         }
     }
 }

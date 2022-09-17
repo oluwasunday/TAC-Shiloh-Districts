@@ -10,6 +10,7 @@ namespace TACShilohDistricts.Core.IRepositories
     {
         IContactUsRepository ContactUs { get; }
         IPrayerRequestRepository PrayerRequest { get; }
+        IGalleryRepository Gallery { get; }
         Task CompleteAsync();
         
     }

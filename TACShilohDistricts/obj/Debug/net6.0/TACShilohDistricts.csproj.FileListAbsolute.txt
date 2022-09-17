@@ -261,7 +261,6 @@ C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts\
 C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts\obj\Debug\net6.0\TACShilohDistricts.AssemblyInfoInputs.cache
 C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts\obj\Debug\net6.0\TACShilohDistricts.AssemblyInfo.cs
 C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts\obj\Debug\net6.0\TACShilohDistricts.csproj.CoreCompileInputs.cache
-C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts\obj\Debug\net6.0\TACShilohDistricts.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts\obj\Debug\net6.0\TACShilohDistricts.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts\obj\Debug\net6.0\TACShilohDistricts.RazorAssemblyInfo.cache
 C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts\obj\Debug\net6.0\TACShilohDistricts.RazorAssemblyInfo.cs

@@ -1,5 +1,7 @@
+using System;
 using TACShilohDistricts;
 using TACShilohDistricts.Extensions;
+using TACShilohDistricts.Infrastructure.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,10 +11,19 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 var startup = new Startup(builder.Configuration, builder.Environment);
+
 startup.ConfigureServices(builder.Services);
 
 
 var app = builder.Build();
+
+using (var scope = app.Services.CreateScope())
+{
+    var dbContext = scope.ServiceProvider.GetRequiredService<TACShilohContext>();
+    // use context
+    startup.Configure(app, dbContext);
+}
+
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

@@ -1,6 +1,20 @@
-﻿@{
+﻿@using TACShilohDistricts.Core.DTOs.Gallery
+@model TACShilohDistricts.Core.ViewModel.AllPicsViewModel
+
+@{
     ViewData["Title"] = "Gallery";
 }
+
+@{
+    var distintGallery = new List<string>();
+
+    foreach(var gallery in Model.Galleries){
+        if(distintGallery.Contains(gallery.Category)){
+            continue;
+        }
+        distintGallery.Add(gallery.Category);
+    }
+                                        }
 
 @*<h1>Gallery</h1>*@
 <div id="banner-area" class="banner-area" style="background-image:url('contents/images/banner/banner1.jpg')">
@@ -38,7 +52,28 @@
                 <div class="row shuffle-wrapper">
                     <div class="col-1 shuffle-sizer"></div>
 
-                    <div class="col-lg-4 col-md-6 shuffle-item">
+                    @foreach (var gallery in Model.Galleries)
+                    {
+                        <div class="col-lg-4 col-md-6 shuffle-item">
+                            <div class="project-img-container">
+                                <a class="gallery-popup" href="#">
+                                    <img class="img-fluid" src="@gallery.ImageUrl" />
+                                </a>
+                                <div class="project-item-info">
+                                    <div class="project-item-info-content">
+                                        <h3 class="project-item-title">
+                                            <a href="projects-single.html">@gallery.ImageTitle</a>
+                                        </h3>
+                                        <p class="project-cat">@gallery.Category</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- shuffle item 1 end -->
+                    }
+
+                    <!-- <div class="col-lg-4 col-md-6 shuffle-item">
                         <div class="project-img-container">
                             <a class="gallery-popup" href="~/contents/images/projects/project1.jpg">
                                 <img class="img-fluid" src="~/contents/images/gallery/one.jpg" />
@@ -52,9 +87,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div><!-- shuffle item 1 end -->
-
-                    <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;healthcare&quot;]">
+                    </div>shuffle item 1 end -->
+                    <!-- <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;healthcare&quot;]">
                         <div class="project-img-container">
                             <a class="gallery-popup" href="~/contents/images/projects/project2.jpg">
                                 <img class="img-fluid" src="~/contents/images/gallery/two.jpg" />
@@ -68,9 +102,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div><!-- shuffle item 2 end -->
-
-                    <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;infrastructure&quot;,&quot;commercial&quot;]">
+                    </div>shuffle item 2 end -->
+                    <!-- <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;infrastructure&quot;,&quot;commercial&quot;]">
                         <div class="project-img-container">
                             <a class="gallery-popup" href="~/contents/images/gallery/three.jpg">
                                 <img class="img-fluid" src="~/contents/images/gallery/three.jpg" />
@@ -84,9 +117,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div><!-- shuffle item 3 end -->
-
-                    <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;education&quot;,&quot;infrastructure&quot;]">
+                    </div>shuffle item 3 end -->
+                    <!-- <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;education&quot;,&quot;infrastructure&quot;]">
                         <div class="project-img-container">
                             <a class="gallery-popup" href="~/contents/images/galler/four.jpg">
                                 <img class="img-fluid" src="~/contents/images/gallery/four.jpg" />
@@ -100,9 +132,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div><!-- shuffle item 4 end -->
-
-                    <div class="col-lg-4 col-md-6 shuffle-item">
+                    </div>shuffle item 4 end -->
+                    <!-- <div class="col-lg-4 col-md-6 shuffle-item">
                         <div class="project-img-container">
                             <a class="gallery-popup" href="~/contents/images/gallery/one.jpg">
                                 <img class="img-fluid" src="~/contents/images/gallery/one.jpg" />
@@ -116,9 +147,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div><!-- shuffle item 5 end -->
-
-                    <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;residential&quot;]">
+                    </div>shuffle item 5 end -->
+                    <!-- <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;residential&quot;]">
                         <div class="project-img-container">
                             <a class="gallery-popup" href="~/contents/images/gallery/two.jpg">
                                 <img class="img-fluid" src="~/contents/images/gallery/two.jpg" />
@@ -132,7 +162,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div><!-- shuffle item 6 end -->
+                    </div>shuffle item 6 end -->
                 </div><!-- shuffle end -->
             </div>
 
