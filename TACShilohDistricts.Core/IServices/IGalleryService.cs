@@ -12,5 +12,6 @@ namespace TACShilohDistricts.Core.IServices
         Task<List<GalleryDto>> GetAllPictures();
         Task<List<GalleryDto>> GetAllPicturesByCategory(string category);
         Task<List<GalleryDto>> AllGalleryCategories();
+        Task<List<GalleryDto>> AllGalleriesByCategory(string category);
     }
 }

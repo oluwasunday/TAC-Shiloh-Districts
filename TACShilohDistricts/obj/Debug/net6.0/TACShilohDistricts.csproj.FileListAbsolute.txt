@@ -275,3 +275,4 @@ C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts\
 C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts\obj\Debug\net6.0\TACShilohDistricts.pdb
 C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts\obj\Debug\net6.0\TACShilohDistricts.genruntimeconfig.cache
 C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts\obj\Debug\net6.0\ref\TACShilohDistricts.dll
+C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts\obj\Debug\net6.0\TACShilohDistricts.MvcApplicationPartsAssemblyInfo.cs

@@ -56,5 +56,13 @@ namespace TACShilohDistricts.Services.Services
 
             return await Task.FromResult(allPics);
         }
+
+        public async Task<List<GalleryDto>> AllGalleriesByCategory(string category)
+        {
+            var gallery = _unitOfWork.Gallery.GetAll().Where(x => x.Category == category);
+            var allPics = _mapper.Map<List<GalleryDto>>(gallery);
+
+            return await Task.FromResult(allPics);
+        }
     }
 }

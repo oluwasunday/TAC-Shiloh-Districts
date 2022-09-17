@@ -56,13 +56,13 @@
                     {
                         <div class="col-lg-4 col-md-6 shuffle-item">
                             <div class="project-img-container">
-                                <a class="gallery-popup" href="#">
+                                <a class="gallery-popup" asp-controller="Media" asp-action="GalleryByCategory" asp-route-category="@gallery.Category">
                                     <img class="img-fluid" src="@gallery.ImageUrl" />
                                 </a>
                                 <div class="project-item-info">
                                     <div class="project-item-info-content">
                                         <h3 class="project-item-title">
-                                            <a href="projects-single.html">@gallery.ImageTitle</a>
+                                            <a asp-controller="Media" asp-action="GalleryByCategory" asp-route-category="@gallery.Category">@gallery.ImageTitle</a>
                                         </h3>
                                         <p class="project-cat">@gallery.Category</p>
                                     </div>

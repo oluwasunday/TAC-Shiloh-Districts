@@ -30,8 +30,18 @@ namespace TACShilohDistricts.Controllers
         
         public async Task<IActionResult> Index()
         {
-            //var allPics = await _galleryService.GetAllPictures();
             var allPics = await _galleryService.AllGalleryCategories();
+            var galleries = new AllPicsViewModel
+            {
+                Galleries = allPics
+            };
+            return View(galleries);
+        }
+
+        public async Task<IActionResult> GalleryByCategory(string category)
+        {
+            var allPics = await _galleryService.AllGalleriesByCategory(category);
+
             var galleries = new AllPicsViewModel
             {
                 Galleries = allPics
