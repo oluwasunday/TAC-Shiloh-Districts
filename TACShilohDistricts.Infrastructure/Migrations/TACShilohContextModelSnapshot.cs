@@ -45,11 +45,10 @@ namespace TACShilohDistricts.Infrastructure.Migrations
                     b.Property<string>("NewsId")
                         .HasColumnType("text");
 
-                    b.Property<byte[]>("RowVersion")
+                    b.Property<string>("RowVersion")
                         .IsConcurrencyToken()
-                        .IsRequired()
                         .ValueGeneratedOnAddOrUpdate()
-                        .HasColumnType("bytea");
+                        .HasColumnType("text");
 
                     b.Property<DateTime>("UpdatedAt")
                         .HasColumnType("timestamp with time zone");
@@ -70,24 +69,27 @@ namespace TACShilohDistricts.Infrastructure.Migrations
                         .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("Email")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("boolean");
 
                     b.Property<string>("Message")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("Name")
+                        .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<byte[]>("RowVersion")
+                    b.Property<string>("RowVersion")
                         .IsConcurrencyToken()
-                        .IsRequired()
                         .ValueGeneratedOnAddOrUpdate()
-                        .HasColumnType("bytea");
+                        .HasColumnType("text");
 
                     b.Property<string>("Subject")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<DateTime>("UpdatedAt")
@@ -107,6 +109,7 @@ namespace TACShilohDistricts.Infrastructure.Migrations
                         .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("Description")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<int>("EventCategory")
@@ -116,15 +119,16 @@ namespace TACShilohDistricts.Infrastructure.Migrations
                         .HasColumnType("boolean");
 
                     b.Property<string>("NewsPictureUrl")
+                        .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<byte[]>("RowVersion")
+                    b.Property<string>("RowVersion")
                         .IsConcurrencyToken()
-                        .IsRequired()
                         .ValueGeneratedOnAddOrUpdate()
-                        .HasColumnType("bytea");
+                        .HasColumnType("text");
 
                     b.Property<string>("Title")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<DateTime>("UpdatedAt")
@@ -144,12 +148,14 @@ namespace TACShilohDistricts.Infrastructure.Migrations
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Category")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("ImageTitle")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("ImageUrl")
@@ -176,21 +182,23 @@ namespace TACShilohDistricts.Infrastructure.Migrations
                         .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("Description")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("boolean");
 
                     b.Property<string>("NewsPictureUrl")
+                        .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<byte[]>("RowVersion")
+                    b.Property<string>("RowVersion")
                         .IsConcurrencyToken()
-                        .IsRequired()
                         .ValueGeneratedOnAddOrUpdate()
-                        .HasColumnType("bytea");
+                        .HasColumnType("text");
 
                     b.Property<string>("Title")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<DateTime>("UpdatedAt")
@@ -228,10 +236,11 @@ namespace TACShilohDistricts.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<byte[]>("RowVersion")
+                    b.Property<string>("RowVersion")
                         .IsConcurrencyToken()
+                        .IsRequired()
                         .ValueGeneratedOnAddOrUpdate()
-                        .HasColumnType("bytea");
+                        .HasColumnType("text");
 
                     b.Property<string>("Subject")
                         .IsRequired()
@@ -255,6 +264,7 @@ namespace TACShilohDistricts.Infrastructure.Migrations
                         .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("Description")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<bool>("IsApproved")
@@ -263,19 +273,23 @@ namespace TACShilohDistricts.Infrastructure.Migrations
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("boolean");
 
-                    b.Property<byte[]>("RowVersion")
+                    b.Property<string>("RowVersion")
                         .IsConcurrencyToken()
-                        .IsRequired()
                         .ValueGeneratedOnAddOrUpdate()
-                        .HasColumnType("bytea");
+                        .HasColumnType("text");
+
+                    b.Property<string>("TestifyerLocation")
+                        .HasColumnType("text");
 
                     b.Property<string>("TestifyerName")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("TestifyerPictureUrl")
                         .HasColumnType("text");
 
                     b.Property<string>("Title")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<DateTime>("UpdatedAt")

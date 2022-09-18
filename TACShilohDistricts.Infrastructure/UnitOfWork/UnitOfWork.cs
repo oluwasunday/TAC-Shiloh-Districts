@@ -9,6 +9,7 @@ namespace TACShilohDistricts.Infrastructure.UnitOfWork
         public IContactUsRepository ContactUs { get; }
         public IPrayerRequestRepository PrayerRequest { get; }
         public IGalleryRepository Gallery { get; }
+        public ITestimonyRepository Testimony { get; }
 
         private readonly TACShilohContext _context;
 
@@ -17,6 +18,7 @@ namespace TACShilohDistricts.Infrastructure.UnitOfWork
             _context = context;
             ContactUs = new ContactUsRepository(_context);
             PrayerRequest = new PrayerRequestRepository(_context);
+            Testimony = new TestimonyRepository(_context);
             Gallery = new GalleryRepository(_context);
         }
 

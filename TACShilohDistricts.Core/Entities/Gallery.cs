@@ -15,9 +15,9 @@ namespace TACShilohDistricts.Core.Entities
         public int Id { get; set; }
         [Required]
         public string ImageUrl { get; set; }
-        public string? ImageTitle { get; set; }
+        public string ImageTitle { get; set; }
         public string? PublicId { get; set; }
-        public string? Category { get; set; }
+        public string Category { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
         public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
     }
