@@ -82,8 +82,8 @@
                         <h3 class="widget-title">Categories</h3>
                         <ul class="arrow nav nav-tabs">
 
-                            @foreach(var cat in Model.Categories){
-                                <li><a href="#">@cat</a></li>
+                            @foreach(var category in Model.Categories){
+                                <li><a asp-controller="QuickLinks" asp-action="NewsAndEventsByCategory" asp-route-category="@category">@category</a></li>
                             }
                         </ul>
                     </div><!-- Categories end -->
