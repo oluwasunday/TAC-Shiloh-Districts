@@ -12,8 +12,8 @@ using TACShilohDistricts.Infrastructure.Data;
 namespace TACShilohDistricts.Infrastructure.Migrations
 {
     [DbContext(typeof(TACShilohContext))]
-    [Migration("20220807192227_initial")]
-    partial class initial
+    [Migration("20221112090433_second")]
+    partial class second
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -47,11 +47,10 @@ namespace TACShilohDistricts.Infrastructure.Migrations
                     b.Property<string>("NewsId")
                         .HasColumnType("text");
 
-                    b.Property<byte[]>("RowVersion")
+                    b.Property<string>("RowVersion")
                         .IsConcurrencyToken()
-                        .IsRequired()
                         .ValueGeneratedOnAddOrUpdate()
-                        .HasColumnType("bytea");
+                        .HasColumnType("text");
 
                     b.Property<DateTime>("UpdatedAt")
                         .HasColumnType("timestamp with time zone");
@@ -72,24 +71,27 @@ namespace TACShilohDistricts.Infrastructure.Migrations
                         .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("Email")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("boolean");
 
                     b.Property<string>("Message")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("Name")
+                        .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<byte[]>("RowVersion")
+                    b.Property<string>("RowVersion")
                         .IsConcurrencyToken()
-                        .IsRequired()
                         .ValueGeneratedOnAddOrUpdate()
-                        .HasColumnType("bytea");
+                        .HasColumnType("text");
 
                     b.Property<string>("Subject")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<DateTime>("UpdatedAt")
@@ -109,6 +111,7 @@ namespace TACShilohDistricts.Infrastructure.Migrations
                         .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("Description")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<int>("EventCategory")
@@ -118,15 +121,16 @@ namespace TACShilohDistricts.Infrastructure.Migrations
                         .HasColumnType("boolean");
 
                     b.Property<string>("NewsPictureUrl")
+                        .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<byte[]>("RowVersion")
+                    b.Property<string>("RowVersion")
                         .IsConcurrencyToken()
-                        .IsRequired()
                         .ValueGeneratedOnAddOrUpdate()
-                        .HasColumnType("bytea");
+                        .HasColumnType("text");
 
                     b.Property<string>("Title")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<DateTime>("UpdatedAt")
@@ -135,6 +139,40 @@ namespace TACShilohDistricts.Infrastructure.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Events");
+                });
+
+            modelBuilder.Entity("TACShilohDistricts.Core.Entities.Gallery", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Category")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("ImageTitle")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("ImageUrl")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("PublicId")
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Galleries");
                 });
 
             modelBuilder.Entity("TACShilohDistricts.Core.Entities.News", b =>
@@ -146,21 +184,23 @@ namespace TACShilohDistricts.Infrastructure.Migrations
                         .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("Description")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("boolean");
 
                     b.Property<string>("NewsPictureUrl")
+                        .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<byte[]>("RowVersion")
+                    b.Property<string>("RowVersion")
                         .IsConcurrencyToken()
-                        .IsRequired()
                         .ValueGeneratedOnAddOrUpdate()
-                        .HasColumnType("bytea");
+                        .HasColumnType("text");
 
                     b.Property<string>("Title")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<DateTime>("UpdatedAt")
@@ -169,6 +209,45 @@ namespace TACShilohDistricts.Infrastructure.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("News");
+                });
+
+            modelBuilder.Entity("TACShilohDistricts.Core.Entities.NewsAndEvents", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<int>("EventCategory")
+                        .HasColumnType("integer");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("boolean");
+
+                    b.Property<string>("NewsPictureUrl")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("RowVersion")
+                        .IsConcurrencyToken()
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("NewsAndEvents");
                 });
 
             modelBuilder.Entity("TACShilohDistricts.Core.Entities.PrayerRequest", b =>
@@ -198,10 +277,11 @@ namespace TACShilohDistricts.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<byte[]>("RowVersion")
+                    b.Property<string>("RowVersion")
                         .IsConcurrencyToken()
+                        .IsRequired()
                         .ValueGeneratedOnAddOrUpdate()
-                        .HasColumnType("bytea");
+                        .HasColumnType("text");
 
                     b.Property<string>("Subject")
                         .IsRequired()
@@ -225,24 +305,32 @@ namespace TACShilohDistricts.Infrastructure.Migrations
                         .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("Description")
+                        .IsRequired()
                         .HasColumnType("text");
+
+                    b.Property<bool>("IsApproved")
+                        .HasColumnType("boolean");
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("boolean");
 
-                    b.Property<byte[]>("RowVersion")
+                    b.Property<string>("RowVersion")
                         .IsConcurrencyToken()
-                        .IsRequired()
                         .ValueGeneratedOnAddOrUpdate()
-                        .HasColumnType("bytea");
+                        .HasColumnType("text");
+
+                    b.Property<string>("TestifyerLocation")
+                        .HasColumnType("text");
 
                     b.Property<string>("TestifyerName")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("TestifyerPictureUrl")
                         .HasColumnType("text");
 
                     b.Property<string>("Title")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<DateTime>("UpdatedAt")

@@ -21,5 +21,7 @@ namespace TACShilohDistricts.Infrastructure.Data
         public DbSet<Testimony> Testimonies { get; set; }
         public DbSet<Events> Events { get; set; }
         public DbSet<PrayerRequest> PrayerRequests { get; set; }
+        public DbSet<Gallery> Galleries { get; set; }
+        public DbSet<NewsAndEvents> NewsAndEvents { get; set; }
     }
 }

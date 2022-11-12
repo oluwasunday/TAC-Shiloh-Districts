@@ -1,0 +1,42 @@
+﻿using AutoMapper;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using TACShilohDistricts.Core.DTOs;
+using TACShilohDistricts.Core.Entities;
+using TACShilohDistricts.Core.Handlers;
+using TACShilohDistricts.Core.IRepositories;
+using TACShilohDistricts.Core.IServices;
+
+namespace TACShilohDistricts.Services.Services
+{
+    public class NewsAndEventsService : INewsAndEventsService
+    {
+        private readonly IUnitOfWork _unitOfWork;
+        private readonly IMapper _mapper;
+
+        public NewsAndEventsService(IUnitOfWork unitOfWork, IMapper mapper)
+        {
+            _unitOfWork = unitOfWork;
+            _mapper = mapper;
+        }
+
+        public async Task<Response<List<NewsAndEvents>>> GetAllNewsAndEventsAsync()
+        {
+            var newsAndEvents = _unitOfWork.NewsAndEvents.GetAll();
+
+            var response =  Response<List<NewsAndEvents>>.Success("success", newsAndEvents.OrderByDescending(x => x.DateOfEvents).Take(10).ToList());
+            return response;
+        }
+
+        public async Task<Response<NewsAndEvents>> GetAllNewsAndEventsByIdAsync(string id)
+        {
+            var newsAndEvent = await _unitOfWork.NewsAndEvents.GetAsync(x => x.Id == id);
+
+            var response =  Response<NewsAndEvents>.Success("success", newsAndEvent);
+            return response;
+        }
+    }
+}

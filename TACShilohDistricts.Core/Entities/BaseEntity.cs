@@ -9,6 +9,6 @@ namespace TACShilohDistricts.Core.Entities
         public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
         public bool IsDeleted { get; set; }
         [Timestamp]
-        public byte[] RowVersion { get; set; }
+        public string? RowVersion { get; set; }
     }
 }
