@@ -2,7 +2,7 @@
 
 namespace TACShilohDistricts.Controllers
 {
-    public class TestimoniesController : Controller
+    public class VideoStreamsController : Controller
     {
         public IActionResult Index()
         {

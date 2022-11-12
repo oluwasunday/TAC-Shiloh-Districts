@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using AutoMapper;
 using TACShilohDistricts.Core.DTOs;
+using TACShilohDistricts.Core.DTOs.Gallery;
+using TACShilohDistricts.Core.DTOs.Testimony;
 using TACShilohDistricts.Core.Entities;
 
 namespace TACShilohDistricts.Application.Mapper
@@ -15,6 +17,8 @@ namespace TACShilohDistricts.Application.Mapper
         {
             CreateMap<ContactUs, ContactUsDto>().ReverseMap();
             CreateMap<PrayerRequest, PrayerRequestDto>().ReverseMap();
+            CreateMap<Gallery, GalleryDto>().ReverseMap();
+            CreateMap<Testimony, TestimonyDto>().ReverseMap();
         }
     }
 }

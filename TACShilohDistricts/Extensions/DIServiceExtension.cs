@@ -16,6 +16,9 @@ namespace TACShilohDistricts.Extensions
             // all services
             services.AddScoped<IContactUsService, ContactUsService>();
             services.AddScoped<IPrayerRequestService, PrayerRequestService>();
+            services.AddScoped<IGalleryService, GalleryService>();
+            services.AddScoped<ITestimonyService, TestimonyService>();
+            services.AddScoped<INewsAndEventsService, NewsAndEventsService>();
         }
     }
 }

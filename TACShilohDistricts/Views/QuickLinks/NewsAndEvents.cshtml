@@ -1,0 +1,131 @@
+﻿@model TACShilohDistricts.Core.ViewModel.NewsAndEventsViewModel
+@{
+    ViewData["Title"] = "NewsAndEvents";
+}
+
+<div id="banner-area" class="banner-area" style="background-image:url('../contents/images/banner/testimony.jpg')">
+    <div class="banner-text">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="banner-heading">
+                        <h1 class="banner-title">News And Events</h1>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb justify-content-center">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                @*<li class="breadcrumb-item"><a href="#">company</a></li>*@
+                                <li class="breadcrumb-item active" aria-current="page">News And Events</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div><!-- Col end -->
+            </div><!-- Row end -->
+        </div><!-- Container end -->
+    </div><!-- Banner text end -->
+</div><!-- Banner area end --> 
+
+
+<section id="main-container" class="main-container">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-4 order-1 order-lg-0">
+
+                <div class="sidebar sidebar-left">
+                    <div class="widget recent-posts">
+                        <h3 class="widget-title">Recent Posts</h3>
+                        <ul class="list-unstyled">
+
+                            @foreach(var post in Model.NewsAndEvents){
+                                <li class="d-flex align-items-center">
+                                    <div class="posts-thumb">
+                                        <a href="#"><img loading="lazy" alt="img" src="@post.NewsPictureUrl" style="border-radius: 30px"></a>
+                                    </div>
+                                    <div class="post-info">
+                                        <h4 class="entry-title">
+                                            <a href="#">@post.Title</a>
+                                        </h4>
+                                    </div>
+                                </li>
+
+                                <!-- 1st post end-->
+                            }
+
+                        </ul>
+
+                    </div><!-- Recent post end -->
+
+                    <div class="widget">
+                        <h3 class="widget-title">Categories</h3>
+                        <ul class="arrow nav nav-tabs">
+                            @foreach(var category in Model.Categories){
+                                <li><a href="#">@category.ToString()</a></li>
+                            }
+                        </ul>
+                    </div><!-- Categories end -->
+
+
+                </div><!-- Sidebar end -->
+            </div><!-- Sidebar Col end -->
+
+            <div class="col-lg-8 mb-5 mb-lg-0 order-0 order-lg-1">
+                @foreach (var news in Model.NewsAndEvents)
+                {
+                    <div class="post">
+                        <div class="post-media post-image">
+                            <img loading="lazy" src="@news.NewsPictureUrl" alt="post-image">
+                        </div>
+
+                        <div class="post-body">
+                            <div class="entry-header">
+                                <div class="post-meta">
+                                    @*<span class="post-author">
+                                        <i class="far fa-user"></i><a href="#"> Admin</a>
+                                    </span>*@
+                                    <span class="post-cat">
+                                        <i class="far fa-folder-open"></i><a href="#"> @news.EventCategory.ToString()</a>
+                                    </span>
+                                    <span class="post-meta-date"><i class="far fa-calendar"></i> @news.DateOfEvents</span>
+                                    @*<span class="post-comment">
+                                        <i class="far fa-comment"></i> 03<a href="#" class="comments-link">Comments</a>
+                                    </span>*@
+                                </div>
+                                <h2 class="entry-title">
+                                    <a asp-controller="QuickLinks" asp-action="NewsAndEventsById" asp-route-id="@news.Id">@news.Title</a>
+                                </h2>
+                            </div><!-- header end -->
+
+                            <div class="entry-content">
+                                <p>
+                                    @news.Description ...
+                                </p>
+                            </div>
+
+                            <div class="post-footer">
+                                <a asp-controller="QuickLinks" asp-action="NewsAndEventsById" asp-route-id="@news.Id" class="btn btn-primary">Continue Reading</a>
+                            </div>
+
+                        </div><!-- post-body end -->
+                    </div>
+
+                    <!-- 1st post end -->
+                }
+
+
+
+                <nav class="paging" aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-double-left"></i></a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-double-right"></i></a></li>
+                    </ul>
+                </nav>
+
+            </div><!-- Content Col end -->
+
+        </div><!-- Main row end -->
+
+    </div><!-- Container end -->
+</section><!-- Main container end -->

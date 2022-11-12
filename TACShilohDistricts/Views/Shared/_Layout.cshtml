@@ -120,25 +120,24 @@
                                   <ul class="dropdown-menu" role="menu">
                                     <li><a asp-controller="About" asp-action="Index">Our History</a></li>
                                     <li><a asp-controller="DoctrineAndBelief" asp-action="Index">Doctrine and Belief</a></li>
-                                    <li><a asp-controller="Testimonies" asp-action="Index">Testimonies</a></li>
                                   </ul>
                               </li>
 
                               <li class="nav-item dropdown">
                                   <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Media <i class="fa fa-angle-down"></i></a>
                                   <ul class="dropdown-menu" role="menu">
-                                    <li><a href="#">Sermon</a></li>
-                                    <li><a href="#">Video/Audio Stream</a></li>
+                                    <li><a asp-controller="Media" asp-action="Index">Gallery</a></li>
+                                    <!-- <li><a asp-controller="VideoStreams" asp-action="Index">Video Stream</a></li> -->
+                                    <li><a href="https://youtube.com/channel/UCbSztBy03389dwYPEu6iTAQ" target="_blank">Video Stream</a></li>
                                   </ul>
                               </li>
               
                               <li class="nav-item dropdown">
                                   <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Quick Links <i class="fa fa-angle-down"></i></a>
                                   <ul class="dropdown-menu" role="menu">
-                                    <li><a href="#">Latest News</a></li>
-                                    <li><a href="#">Events</a></li>
-                                    <li><a href="#">Testimonies</a></li>
-                                    <li><a asp-controller="PrayerRequest">Prayer Request</a></li>
+                                    <li><a asp-controller="QuickLinks" asp-action="NewsAndEvents">News/Events</a></li>
+                                    <li><a asp-controller="QuickLinks" asp-action="Testimonies">Testimonies</a></li>
+                                    <li><a asp-controller="QuickLinks" asp-action="PrayerRequest">Prayer Request</a></li>
                                   </ul>
                               </li>
               
