@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TACShilohDistricts.Core.Entities;
+using TACShilohDistricts.Core.Enums;
 using TACShilohDistricts.Infrastructure.Data;
 
 namespace TACShilohDistricts.Infrastructure.Seeding
@@ -141,6 +142,51 @@ namespace TACShilohDistricts.Infrastructure.Seeding
                 };
 
                 await dbContext.Testimonies.AddRangeAsync(testimonies);
+            }
+
+            if (!dbContext.NewsAndEvents.Any())
+            {
+                List<NewsAndEvents> newsAndEvents = new List<NewsAndEvents> 
+                { 
+                    new NewsAndEvents
+                    {
+                        Description = "The Apostolic Church LAWNA General Thanksgiving date has been scheduled and will be glorious.",
+                        Id = Guid.NewGuid().ToString(),
+                        NewsPictureUrl = "https://res.cloudinary.com/dkoncept/image/upload/v1663414316/TAC%20Shiloh%20District/one_empgdi.jpg",
+                        Title = "Lawna General Thanksgiving 2022",
+                        CreatedAt = DateTime.Now,
+                        UpdatedAt = DateTime.Now,
+                        RowVersion = DateTime.Now.Ticks.ToString(),
+                        EventCategory = EventCategory.Lawna,
+                        DateOfEvents = new DateTime(DateTime.Now.Year, 12, 18, 8, 0, 0)
+                    },
+                    new NewsAndEvents
+                    {
+                        Description = "The last Shiloh Night (Oru Shiloh) in the year 2022 will be extremely powerful. You can't afford to miss it.",
+                        Id = Guid.NewGuid().ToString(),
+                        NewsPictureUrl = "https://res.cloudinary.com/dkoncept/image/upload/v1663414316/TAC%20Shiloh%20District/one_empgdi.jpg",
+                        Title = "Oru Shiloh, Dec 2022",
+                        CreatedAt = DateTime.Now,
+                        UpdatedAt = DateTime.Now,
+                        RowVersion = DateTime.Now.Ticks.ToString(),
+                        EventCategory = EventCategory.Shiloh,
+                        DateOfEvents = new DateTime(DateTime.Now.Year, 12, 2, 20, 0, 0)
+                    },
+                    new NewsAndEvents
+                    {
+                        Description = "The blessed my family with a bouncing baby boy. We thank God for safe delivery. Praise the Lord.",
+                        Id = Guid.NewGuid().ToString(),
+                        NewsPictureUrl = "https://res.cloudinary.com/dkoncept/image/upload/v1663414316/TAC%20Shiloh%20District/one_empgdi.jpg",
+                        Title = "Chrismas Carol",
+                        CreatedAt = DateTime.Now,
+                        UpdatedAt = DateTime.Now,
+                        RowVersion = DateTime.Now.Ticks.ToString(),
+                        EventCategory = EventCategory.Shiloh,
+                        DateOfEvents = new DateTime(DateTime.Now.Year, 12, 24, 20, 0, 0)
+                    }
+                };
+
+                await dbContext.NewsAndEvents.AddRangeAsync(newsAndEvents);
             }
 
             await dbContext.SaveChangesAsync();

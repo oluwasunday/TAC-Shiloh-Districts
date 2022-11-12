@@ -8,8 +8,15 @@ namespace TACShilohDistricts.Core.Enums
 {
     public enum EventCategory
     {
-        Area,
+        Area = 1,
         Lawna,
         Shiloh
+    }
+
+    public enum NewsAndEventsCategory
+    {
+        General = 1,
+        News,
+        Event
     }
 }
