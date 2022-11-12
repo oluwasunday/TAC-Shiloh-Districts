@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TACShilohDistricts.Core.Entities;
+using TACShilohDistricts.Core.Enums;
 using TACShilohDistricts.Core.Handlers;
 
 namespace TACShilohDistricts.Core.IServices
@@ -12,5 +13,6 @@ namespace TACShilohDistricts.Core.IServices
     {
         Task<Response<List<NewsAndEvents>>> GetAllNewsAndEventsAsync();
         Task<Response<NewsAndEvents>> GetAllNewsAndEventsByIdAsync(string id);
+        Task<Response<List<NewsAndEvents>>> GetAllNewsAndEventsByCategoryAsync(EventCategory category);
     }
 }

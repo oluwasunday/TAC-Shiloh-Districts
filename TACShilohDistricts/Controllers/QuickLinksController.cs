@@ -68,6 +68,33 @@ namespace TACShilohDistricts.Controllers
             return NotFound();
         }
 
+        public async Task<IActionResult> NewsAndEventsByCategory(EventCategory category)
+        {
+            var newsAndEvents = await _newsAndEventsService.GetAllNewsAndEventsByCategoryAsync(category);
+
+            if (newsAndEvents.Succeeded)
+            {
+                var vm = newsAndEvents.Data.Select(x =>  new NewsAndEventsVM
+                {
+                    Title = x.Title,
+                    Id = x.Id,
+                    Description = x.Description,
+                    DateOfEvents = x.DateOfEvents,
+                    EventCategory = x.EventCategory,
+                    NewsPictureUrl = x.NewsPictureUrl
+                });
+
+                var results = new NewsAndEventsViewModel
+                {
+                    NewsAndEvents = vm,
+                    Categories = Enum.GetValues(typeof(EventCategory)).Cast<EventCategory>().ToList()
+                };
+
+                return View(results);
+            }            
+            return NotFound();
+        }
+
         public IActionResult PrayerRequest()
         {
             return View();
