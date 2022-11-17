@@ -1,0 +1,225 @@
+﻿@model TACShilohDistricts.Core.DTOs.AppUserDtos.AddUserResponseDto
+@{
+    //var user = ViewData["UserData"] as AddUserResponseDto;
+    ViewData["Title"] = "Admin Panel";
+    Layout = null;
+    Layout = "_DashboardLayout";
+}
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="~/contents/admindashboard/styles.css" rel="stylesheet" />
+
+@*<h2>Admin Home</h2>*@
+
+@if (Model != null)
+{
+
+    <div class="cards">
+        <div class="card">
+            <div class="box">
+                <h1>@Model.TotalMembers</h1>
+                <h3>Members</h3>
+            </div>
+            <div class="icon-case">
+                <img src="students.png" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="box">
+                <h1>@Model.TotalProphets</h1>
+                <h3>Prophets</h3>
+            </div>
+            <div class="icon-case">
+                <img src="teachers.png" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="box">
+                <h1>@Model.TotalPastors</h1>
+                <h3>Pastors</h3>
+            </div>
+            <div class="icon-case">
+                <img src="schools.png" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="box">
+                <h1>@Model.TotalElders</h1>
+                <h3>Elders</h3>
+            </div>
+            <div class="icon-case">
+                <img src="income.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="content-2">
+        <div class="recent-payments">
+            <div class="title">
+                <h2>Recent Payments</h2>
+                <a href="#" class="btn">View All</a>
+            </div>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>School</th>
+                    <th>Amount</th>
+                    <th>Option</th>
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td>St. James College</td>
+                    <td>$120</td>
+                    <td><a href="#" class="btn">View</a></td>
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td>St. James College</td>
+                    <td>$120</td>
+                    <td><a href="#" class="btn">View</a></td>
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td>St. James College</td>
+                    <td>$120</td>
+                    <td><a href="#" class="btn">View</a></td>
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td>St. James College</td>
+                    <td>$120</td>
+                    <td><a href="#" class="btn">View</a></td>
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td>St. James College</td>
+                    <td>$120</td>
+                    <td><a href="#" class="btn">View</a></td>
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td>St. James College</td>
+                    <td>$120</td>
+                    <td><a href="#" class="btn">View</a></td>
+                </tr>
+            </table>
+        </div>
+        <div class="new-students">
+            <div class="title">
+                <h2>New Students</h2>
+                <a href="#" class="btn">View All</a>
+            </div>
+            <table>
+                <tr>
+                    <th>Profile</th>
+                    <th>Name</th>
+                    <th>option</th>
+                </tr>
+                <tr>
+                    <td><img src="user.png" alt=""></td>
+                    <td>John Steve Doe</td>
+                    <td><img src="info.png" alt=""></td>
+                </tr>
+                <tr>
+                    <td><img src="user.png" alt=""></td>
+                    <td>John Steve Doe</td>
+                    <td><img src="info.png" alt=""></td>
+                </tr>
+                <tr>
+                    <td><img src="user.png" alt=""></td>
+                    <td>John Steve Doe</td>
+                    <td><img src="info.png" alt=""></td>
+                </tr>
+                <tr>
+                    <td><img src="user.png" alt=""></td>
+                    <td>John Steve Doe</td>
+                    <td><img src="info.png" alt=""></td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // Side menu*@
+    @*<div class="side-menu">
+        <div class="brand-name">
+            <h1>Brand</h1>
+        </div>
+        <ul>
+            <li>
+                <a>
+                    <img src="~/contents/admindashboard/icons/dashboard (2).png" />&nbsp; <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <img src="~/contents/admindashboard/icons/users.png" style="filter: invert(99%) sepia(99%) saturate(2%) hue-rotate(252deg) brightness(105%) contrast(100%); width: 32px" />&nbsp;<span>Users</span>
+                </a>                
+            </li>
+            <li>
+                <a>
+                    <img src="~/contents/admindashboard/icons/contacts.png" style="filter: invert(99%) sepia(99%) saturate(2%) hue-rotate(252deg) brightness(105%) contrast(100%); width: 32px" />&nbsp;<span>Contacts</span> 
+                </a>
+            </li>
+            <li>
+                <a>
+                    <img src="~/contents/admindashboard/icons/events-icon.png" style="filter: invert(99%) sepia(99%) saturate(2%) hue-rotate(252deg) brightness(105%) contrast(100%); width: 32px" />&nbsp;<span>News And Events</span>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <img src="~/contents/admindashboard/icons/galleries-icon.png" style="filter: invert(99%) sepia(99%) saturate(2%) hue-rotate(252deg) brightness(105%) contrast(100%); width: 32px" />&nbsp;<span>Galleries</span>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <img src="~/contents/admindashboard/icons/hands-plea-nobg.png" style="filter: invert(99%) sepia(99%) saturate(2%) hue-rotate(252deg) brightness(105%) contrast(100%); width: 32px" />&nbsp; <span>Prayer Requests</span>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <img src="~/contents/admindashboard/icons/witness_testimony.png" style="filter: invert(99%) sepia(99%) saturate(2%) hue-rotate(252deg) brightness(105%) contrast(100%); width: 32px" />&nbsp;<span>Testionies</span>
+                </a>
+            </li>
+        </ul>
+    </div>*@
+}
+else{
+    if (ViewBag.ErrorInfo != null){
+        <h3>@ViewBag.ErrorInfo</h3>
+    }
+    <h3>No Data</h3>
+}
+

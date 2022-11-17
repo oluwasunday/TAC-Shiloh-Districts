@@ -18,7 +18,6 @@ C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts\
 C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts\bin\Debug\net6.0\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
-C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts\bin\Debug\net6.0\Microsoft.Build.Locator.dll
 C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts\bin\Debug\net6.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
 C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts\bin\Debug\net6.0\Microsoft.CodeAnalysis.dll
 C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts\bin\Debug\net6.0\Microsoft.CodeAnalysis.CSharp.dll
@@ -276,3 +275,6 @@ C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts\
 C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts\obj\Debug\net6.0\TACShilohDistricts.pdb
 C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts\obj\Debug\net6.0\TACShilohDistricts.genruntimeconfig.cache
 C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts\obj\Debug\net6.0\ref\TACShilohDistricts.dll
+C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts\bin\Debug\net6.0\Microsoft.Build.dll
+C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts\bin\Debug\net6.0\Microsoft.Build.Framework.dll
+C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts\bin\Debug\net6.0\Microsoft.NET.StringTools.dll

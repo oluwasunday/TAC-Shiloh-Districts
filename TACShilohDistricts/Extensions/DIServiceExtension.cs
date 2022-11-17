@@ -1,6 +1,7 @@
 ﻿using TACShilohDistricts.Core;
 using TACShilohDistricts.Core.IRepositories;
 using TACShilohDistricts.Core.IServices;
+using TACShilohDistricts.Infrastructure.Repositories;
 using TACShilohDistricts.Infrastructure.UnitOfWork;
 using TACShilohDistricts.Services.Services;
 
@@ -19,6 +20,9 @@ namespace TACShilohDistricts.Extensions
             services.AddScoped<IGalleryService, GalleryService>();
             services.AddScoped<ITestimonyService, TestimonyService>();
             services.AddScoped<INewsAndEventsService, NewsAndEventsService>();
+            services.AddScoped<IAuthService, AuthService>();
+            services.AddScoped<ITokenGeneratorService, TokenGeneratorService>();
+            services.AddScoped<IUserRepository, UserRepository>();
         }
     }
 }
