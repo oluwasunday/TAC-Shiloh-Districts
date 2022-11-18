@@ -26,6 +26,9 @@ namespace TACShilohDistricts.Application.Mapper
             CreateMap<UserDto, AppUser>().ReverseMap();
             CreateMap<AppUser, AddUserResponseDto>().ReverseMap();
             CreateMap<AddUserResponseDto, AppUser>().ReverseMap();
+
+            CreateMap<NewsAndEventsDto, NewsAndEvents>().ReverseMap();
+            CreateMap<NewsAndEvents, NewsAndEventsDto>().ReverseMap();
         }
     }
 }

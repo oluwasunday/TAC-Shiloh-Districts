@@ -37,5 +37,13 @@ namespace TACShilohDistricts.Services.Services
 
             return Response<PrayerRequest>.Fail("something went wrong, check the data submitted");
         }
+
+        public async Task<Response<List<PrayerRequest>>> GetLastTenPrayerRequestsAsync()
+        {
+            var requests = _unitOfWork.PrayerRequest.GetAll();
+
+            var response = await Task.FromResult(Response<List<PrayerRequest>>.Success("success", requests.OrderByDescending(x => x.CreatedAt).Take(10).ToList()));
+            return response;
+        }
     }
 }

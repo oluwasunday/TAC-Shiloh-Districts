@@ -1,0 +1,99 @@
+﻿@model TACShilohDistricts.Core.ViewModel.PrayerRequestViewModel
+@{
+    ViewData["Title"] = "LastTenPrayerRequests";
+    Layout = "~/Views/Shared/_DashboardLayout.cshtml";
+}
+
+<div class="content-2">
+    <div class="recent-payments">
+        <div class="title">
+            <h2>Recent News And Events</h2>
+            <a href="#" class="btn">View All</a>
+        </div>
+        @if(Model.PrayerRequests.Any()){
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Subject</th>
+                    <th>Request</th>
+                    <th>Actions</th>
+                </tr>
+                @foreach (var req in Model.PrayerRequests)
+                {
+                    <tr>
+                        <td>@req.Name</td>
+                        <td>@req.Email</td>
+                        <td>@req.Subject</td>
+                        <td>@req.Request</td>
+                        <td>
+                            <span>
+                                <a href="">
+                                    <i class="bi bi-pencil-square" style="color: #000"></i>&nbsp;
+                                </a>
+                                <a href="">
+                                    <i class="bi bi-trash3-fill" style="color: #f00"></i>
+                                </a>
+                            </span>
+                        </td>
+                    </tr>
+                }
+
+            </table>
+        }
+        else{
+            <p>No Request</p>
+        }
+        
+    </div>
+    @*<div class="new-students">
+        <div class="title">
+            <h2>Add new</h2>
+            <!--<a href="#" class="btn">Add New</a>-->
+        </div>
+        <table>
+            <form asp-controller="Admin" asp-action="AddNewsAndEvents" method="post">
+            <tr>
+                <th>Title</th>
+                <td><input type="text" id="Title" name="Title" /></td>
+            </tr>
+            <tr>
+                <th>Category</th>
+                <td>
+                    <select name="EventCategory" id="Category">
+                        <option value="Area">Area</option>
+                        <option value="Lawna">Lawna</option>
+                        <option value="Shiloh">Shiloh</option>
+                        <option value="General">General</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Date of Event
+                </th>
+                <td><input type="date" name="DateOfEvents" id="DateOfEvents" /></td>
+            </tr>
+            <tr>
+                <th>Image Link</th>
+                <td>
+                    <input type="text" name="NewsPictureUrl" id="NewsPictureUrl" />
+                </td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <input type="text" name="Description" id="Description" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td><button class="btn">Submit</button></td>
+
+            </tr>
+            </form>
+        </table>
+    </div>*@
+</div>
