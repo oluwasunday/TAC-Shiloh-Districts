@@ -1,0 +1,44 @@
+﻿@model TACShilohDistricts.Core.ViewModel.UsersViewModel
+@{
+    ViewData["Title"] = "Users";
+    Layout = "~/Views/Shared/_DashboardLayout.cshtml";
+}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+<div class="content-2">
+    <div class="recent-payments">
+        <div class="title">
+            <h2>Users</h2>
+            <a href="#" class="btn">View All</a>
+        </div>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Role</th>
+                <th>Active</th>
+                <th>Actions</th>
+            </tr>
+            @foreach (var user in Model.AddUserResponse)
+            {
+                <tr>
+                    <td>@user.FirstName @user.LastName</td>
+                    <td>@user.Gender</td>
+                    <td>@user.UserRole</td>
+                    <td>@user.Status</td>
+                    <td>
+                        <span>
+                            <a href="">
+                                <i class="bi bi-pencil-square" style="color: #000"></i>&nbsp;
+                            </a>
+                            <a href="">
+                                <i class="bi bi-trash3-fill" style="color: #f00"></i>
+                            </a>
+                        </span>
+                    </td>
+                </tr>
+            }
+            
+        </table>
+    </div>
+</div>

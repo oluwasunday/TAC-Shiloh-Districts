@@ -19,6 +19,42 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/GIGLogistics/Documents/Portfolio/TACShilohDistricts/TACShilohDistricts/Views/Admin/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GIGLogistics/Documents/Portfolio/TACShilohDistricts/TACShilohDistricts/Views/Admin/LastTenContacts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTGFzdFRlbkNvbnRhY3RzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GIGLogistics/Documents/Portfolio/TACShilohDistricts/TACShilohDistricts/Views/Admin/LastTenGallery.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTGFzdFRlbkdhbGxlcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GIGLogistics/Documents/Portfolio/TACShilohDistricts/TACShilohDistricts/Views/Admin/LastTenNewsAndEvents.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTGFzdFRlbk5ld3NBbmRFdmVudHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GIGLogistics/Documents/Portfolio/TACShilohDistricts/TACShilohDistricts/Views/Admin/LastTenPrayerRequests.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTGFzdFRlblByYXllclJlcXVlc3RzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GIGLogistics/Documents/Portfolio/TACShilohDistricts/TACShilohDistricts/Views/Admin/LastTenTestimonies.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTGFzdFRlblRlc3RpbW9uaWVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GIGLogistics/Documents/Portfolio/TACShilohDistricts/TACShilohDistricts/Views/Admin/Users.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVXNlcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GIGLogistics/Documents/Portfolio/TACShilohDistricts/TACShilohDistricts/Views/Auth/Admin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxBZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GIGLogistics/Documents/Portfolio/TACShilohDistricts/TACShilohDistricts/Views/Auth/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/GIGLogistics/Documents/Portfolio/TACShilohDistricts/TACShilohDistricts/Views/Contacts/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -69,6 +105,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/GIGLogistics/Documents/Portfolio/TACShilohDistricts/TACShilohDistricts/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GIGLogistics/Documents/Portfolio/TACShilohDistricts/TACShilohDistricts/Views/Shared/_DashboardLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9EYXNoYm9hcmRMYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/GIGLogistics/Documents/Portfolio/TACShilohDistricts/TACShilohDistricts/Views/Shared/_ValidationScriptsPartial.cshtml]

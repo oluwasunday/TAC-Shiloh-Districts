@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,13 +9,14 @@ using TACShilohDistricts.Core.Entities;
 
 namespace TACShilohDistricts.Infrastructure.Data
 {
-    public class TACShilohContext : DbContext
+    public class TACShilohContext : IdentityDbContext<AppUser>
     {
         public TACShilohContext(DbContextOptions<TACShilohContext> options) : base(options)
         {
 
         }
 
+        public DbSet<AppUser> AppUsers { get; set; }
         public DbSet<ContactUs> ContactUs { get; set; }
         public DbSet<News> News { get; set; }
         public DbSet<Comment> Comments { get; set; }

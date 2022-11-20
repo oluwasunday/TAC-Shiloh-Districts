@@ -9,6 +9,8 @@ using TACShilohDistricts.Core;
 using TACShilohDistricts.Core.IServices;
 using TACShilohDistricts.Core.DTOs.Gallery;
 using TACShilohDistricts.Core.Entities;
+using TACShilohDistricts.Core.Handlers;
+using TACShilohDistricts.Core.DTOs;
 
 namespace TACShilohDistricts.Services.Services
 {
@@ -63,6 +65,30 @@ namespace TACShilohDistricts.Services.Services
             var allPics = _mapper.Map<List<GalleryDto>>(gallery);
 
             return await Task.FromResult(allPics);
+        }
+
+        public async Task<Response<List<GalleryDto>>> GetLastTenGalleries()
+        {
+            var galleries = _unitOfWork.Gallery.GetAll().OrderByDescending(x => x.CreatedAt).Take(10);
+            var allPics = _mapper.Map<List<GalleryDto>>(galleries);
+
+            var response = Response<List<GalleryDto>>.Success("success", allPics);
+            return await Task.FromResult(response);
+        }
+
+        public async Task<Response<Gallery>> AddGalleryAsync(GalleryDto galleryDto)
+        {
+            var gallery = _mapper.Map<Gallery>(galleryDto);
+
+            if (gallery != null)
+            {
+                _unitOfWork.Gallery.Add(gallery);
+                await _unitOfWork.CompleteAsync();
+
+                return Response<Gallery>.Success("success", gallery);
+            }
+
+            return Response<Gallery>.Fail("something went wrong, check the data submitted");
         }
     }
 }

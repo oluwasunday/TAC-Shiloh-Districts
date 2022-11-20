@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>_DashboardLayout</title>
+    <link href="~/contents/admindashboard/styles.css" rel="stylesheet" />
+    <style>
+        .filters{
+            filter: invert(99%) sepia(99%) saturate(2%) hue-rotate(252deg) brightness(105%) contrast(100%);
+            width: 32px;
+        }
+        a:hover{
+            color: #f00;
+        }
+        a{
+            color: #fff;
+        }
+    </style>
+
+    <script type="text/javascript" language="javascript">
+        function DisableBackButton() {
+            window.history.forward()
+        }
+        DisableBackButton();
+        window.onload = DisableBackButton;
+        window.onpageshow = function (evt) { if (evt.persisted) DisableBackButton() }
+        window.onunload = function () { void (0) }
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="side-menu">
+        <div class="brand-name">
+            <h3>Admin Portal</h3>
+        </div>
+        <ul>
+            <li>
+                <a asp-controller="Admin" asp-action="Dashboard">
+                    <img src="~/contents/admindashboard/icons/dashboard (2).png" />&nbsp; <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a asp-controller="Admin" asp-action="Users">
+                    <img src="~/contents/admindashboard/icons/users.png" class="filters" />&nbsp;<span>Users</span>
+                </a>
+            </li>
+            <li>
+                <a asp-controller="Admin" asp-action="LastTenContacts">
+                    <img src="~/contents/admindashboard/icons/contacts.png" class="filters" />&nbsp;<span>Contacts</span>
+                </a>
+            </li>
+            <li>
+                <a asp-controller="Admin" asp-action="LastTenNewsAndEvents">
+                    <img src="~/contents/admindashboard/icons/events-icon.png" class="filters" />&nbsp;<span>News And Events</span>
+                </a>
+            </li>
+            <li>
+                <a asp-controller="Admin" asp-action="LastTenGallery">
+                    <img src="~/contents/admindashboard/icons/galleries-icon.png" class="filters" />&nbsp;<span>Galleries</span>
+                </a>
+            </li>
+            <li>
+                <a asp-controller="Admin" asp-action="LastTenPrayerRequests">
+                    <img src="~/contents/admindashboard/icons/hands-plea-nobg.png" class="filters" />&nbsp; <span>Prayer Requests</span>
+                </a>
+            </li>
+            <li>
+                <a asp-controller="Admin" asp-action="LastTenTestimonies">
+                    <img src="~/contents/admindashboard/icons/witness_testimony.png" class="filters" />&nbsp;<span>Testimonies</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="header">
+            <div class="nav">
+                <img src="~/contents/images/logo-nobg.png" />
+                <div class="search">
+                    @*<input type="text" placeholder="Search..">
+                    <button type="submit"><img src="search.png" alt=""></button>*@
+                </div>
+                <div class="user">
+                    @*<a href="#" class="btn">text </a>*@
+                    @*<img src="notifications.png" alt="">*@
+                    <p>@Model.Email</p>
+                    <div class="img-case">
+                        @*<img src="@Model.PictureUrl" alt="@Model.FirstName">*@
+                        <a asp-controller="Auth" asp-action="Logout"><img src="~/contents/admindashboard/images/logout-main.png" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+
+
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+
+            
+        </div>
+    </div>    
+</body>
+</html>

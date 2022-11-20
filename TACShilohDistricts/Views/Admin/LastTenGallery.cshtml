@@ -1,0 +1,78 @@
+﻿@model TACShilohDistricts.Core.ViewModel.GalleryViewModel
+@{
+    ViewData["Title"] = "LastTenNewsAndEvents";
+    Layout = "~/Views/Shared/_DashboardLayout.cshtml";
+}
+<style>
+    .galleryImg{
+        width: 50%;
+    }
+</style>
+
+<div class="content-2">
+    <div class="recent-payments">
+        <div class="title">
+            <h2>Recent Galleries</h2>
+            <a href="#" class="btn">View All</a>
+        </div>
+        <table>
+            <tr>
+                <th>Title</th>
+                <th>Category</th>
+                <th>Image Url</th>
+                <th>Actions</th>
+            </tr>
+            @foreach (var gallery in Model.Galleries)
+            {
+                <tr>
+                    <td>@gallery.ImageTitle</td>
+                    <td>@gallery.Category</td>
+                    <td><img src="@gallery.ImageUrl" class="galleryImg" />    </td>
+                    <td>
+                        <span>
+                            <a href="">
+                                <i class="bi bi-pencil-square" style="color: #000"></i>&nbsp;
+                            </a>
+                            <a href="">
+                                <i class="bi bi-trash3-fill" style="color: #f00"></i>
+                            </a>
+                        </span>
+                    </td>
+                </tr>
+            }
+
+        </table>
+    </div>
+    <div class="new-students">
+        <div class="title">
+            <h2>Add new</h2>
+        </div>
+        <table>
+            <form asp-controller="Admin" asp-action="" method="post">
+            <tr>
+                <th>Title</th>
+                <td><input type="text" id="ImageTitle" name="ImageTitle" /></td>
+            </tr>
+            <tr>
+                <th>Category</th>
+                <td><label>something to group pictures</label>
+                    <input name="Category" id="Category" />
+                </td>
+            </tr>
+            <tr>
+                <th>Image Link</th>
+                <td>
+                    <textarea name="ImageUrl" id="ImageUrl" cols="23" rows="5">
+                    </textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td><button class="btn">Submit</button></td>
+            </tr>
+            </form>
+        </table>
+    </div>
+</div>
