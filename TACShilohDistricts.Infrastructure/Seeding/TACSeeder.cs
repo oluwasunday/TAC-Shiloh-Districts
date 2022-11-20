@@ -13,9 +13,16 @@ namespace TACShilohDistricts.Infrastructure.Seeding
 {
     public class TACSeeder
     {
-        public static async Task SeedData(TACShilohContext dbContext)
+        public static async Task SeedData(TACShilohContext dbContext, UserManager<AppUser> userManager, RoleManager<IdentityRole> roleManager)
         {
             await dbContext.Database.EnsureCreatedAsync();
+
+            List<string> roles = new List<string> { "Admin", "Pastor", "Prophet", "Elder", "Member" };
+
+            foreach (var role in roles)
+            {
+                await roleManager.CreateAsync(new IdentityRole { Name = role });
+            }
 
             if (!dbContext.Galleries.Any())
             {
@@ -187,6 +194,31 @@ namespace TACShilohDistricts.Infrastructure.Seeding
                 };
 
                 await dbContext.NewsAndEvents.AddRangeAsync(newsAndEvents);
+            }
+
+            if (!dbContext.AppUsers.Any())
+            {
+                var user = new AppUser
+                {
+                    Id = "c180ffc1-d941-4b47-97b2-377baa9e87f7",
+                    FirstName = "tacn-shiloh",
+                    LastName = "Admin",
+                    UserName = "tacnshilohadmin",
+                    Email = "tacnshilohdistrict@gmail.com",
+                    PhoneNumber = "09043546576",
+                    Gender = "Male",
+                    Age = 34,
+                    IsActive = true,
+                    PublicId = Guid.NewGuid().ToString(),
+                    PictureUrl = "http://placehold.it/32x32",
+                    CreatedAt = DateTime.Now,
+                    UpdatedAt = DateTime.Now,
+                    EmailConfirmed = true,
+                    PhoneNumberConfirmed = true
+                };
+
+                await userManager.CreateAsync(user, "Password@123");
+                await userManager.AddToRoleAsync(user, "Admin");
             }
 
             await dbContext.SaveChangesAsync();

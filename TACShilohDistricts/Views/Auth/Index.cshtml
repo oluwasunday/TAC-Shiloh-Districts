@@ -1,0 +1,55 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = null;
+}
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+@*<link rel="stylesheet" href="./style.css">*@
+<link href="~/contents/css/logincss.css" rel="stylesheet" />
+
+<div class="box-form">
+	<div class="left">
+		<div class="overlay">
+		<h1>Hello Admin</h1>
+		<p>Admin login only</p>
+		<span>
+			@*<p>login with social media</p>*@
+			<a href="#"> ... </a>@*<i class="fa fa-facebook" aria-hidden="true"></i>*@
+			<a href="#"> ...</a> @*<i class="fa fa-twitter" aria-hidden="true"></i> Login with Twitter</a>*@
+		</span>
+		</div>
+	</div>
+	
+	
+		<div class="right">
+		<h5> --- Login --- </h5>
+		<p>Please fill in your pre-created account details</p>
+		<form method="post" asp-action="Login">
+			<div class="inputs">
+				<input type="text" placeholder="Enter email" name="Email">
+				<br>
+				<input type="password" placeholder="Enter password" name="password">
+			</div>
+			
+			<br><br>
+			
+			<div class="remember-me--forget-password">
+					<!-- Angular -->
+			<label>
+				<input type="checkbox" name="item" checked/>
+				<span class="text-checkbox">Remember me</span>
+			</label>
+				<a href="#">forget password?</a>
+			</div>
+			
+				<br>
+				@*<input type="submit" class="btn btn-primary" value="Login" />*@
+				<button type="submit">Login</button>
+		</form>
+	</div>
+	
+</div>

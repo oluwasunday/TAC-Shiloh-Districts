@@ -12,5 +12,6 @@ namespace TACShilohDistricts.Core.IServices
     public interface IPrayerRequestService
     {
         Task<Response<PrayerRequest>> AddPrayerRequestAsync(PrayerRequestDto prayerRequest);
+        Task<Response<List<PrayerRequest>>> GetLastTenPrayerRequestsAsync();
     }
 }
