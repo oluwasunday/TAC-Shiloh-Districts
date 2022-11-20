@@ -111,7 +111,7 @@ namespace TACShilohDistricts.Infrastructure.Repositories
 
         public async Task<AddUserResponseDto> UpdateUserAsync(string id, UpdateUserDto user)
         {
-            var appUser = await _userManager.f.Users.FirstOrDefaultAsync(x => x.Id == id);
+            var appUser = await _userManager.Users.FirstOrDefaultAsync(x => x.Id == id);
             if (appUser == null)
             {
                 throw new ArgumentNullException("User not found.");
