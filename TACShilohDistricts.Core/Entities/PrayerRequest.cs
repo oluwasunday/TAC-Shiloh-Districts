@@ -28,7 +28,7 @@ namespace TACShilohDistricts.Core.Entities
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
         public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
         public bool IsDeleted { get; set; }
-        [Timestamp]
-        public string RowVersion { get; set; } = DateTime.Now.Ticks.ToString();
+        
+        public string? RowVersion { get; set; } = "row-" + DateTime.Now.Ticks.ToString();
     }
 }
