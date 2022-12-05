@@ -507,9 +507,6 @@ namespace TACShilohDistricts.Infrastructure.Migrations
                         .HasColumnType("text");
 
                     b.Property<string>("RowVersion")
-                        .IsConcurrencyToken()
-                        .IsRequired()
-                        .ValueGeneratedOnAddOrUpdate()
                         .HasColumnType("text");
 
                     b.Property<string>("Subject")

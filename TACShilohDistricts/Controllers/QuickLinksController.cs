@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using TACShilohDistricts.Core.DTOs;
 using TACShilohDistricts.Core.Enums;
 using TACShilohDistricts.Core.IServices;
 using TACShilohDistricts.Core.ViewModel;
@@ -10,11 +11,13 @@ namespace TACShilohDistricts.Controllers
     {
         private readonly ITestimonyService _testimonyService;
         private readonly INewsAndEventsService _newsAndEventsService;
+        private readonly IPrayerRequestService _prayerRequestService;
 
-        public QuickLinksController(ITestimonyService testimonyService, INewsAndEventsService newsAndEventsService)
+        public QuickLinksController(ITestimonyService testimonyService, INewsAndEventsService newsAndEventsService, IPrayerRequestService prayerRequestService)
         {
             _testimonyService = testimonyService;
             _newsAndEventsService = newsAndEventsService;
+            _prayerRequestService = prayerRequestService;
         }
 
         public async Task<IActionResult> NewsAndEvents()
@@ -97,6 +100,18 @@ namespace TACShilohDistricts.Controllers
 
         public IActionResult PrayerRequest()
         {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> PrayerRequest(PrayerRequestDto prayerRequest)
+        {
+            var result = await _prayerRequestService.AddPrayerRequestAsync(prayerRequest);
+            if (result.Succeeded)
+            {
+                TempData["Response"] = "success";
+                return View( "PrayerRequest");
+            }
             return View();
         }
 
