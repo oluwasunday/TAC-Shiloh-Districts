@@ -12,5 +12,6 @@ namespace TACShilohDistricts.Core.IServices
     {
         Task<List<TestimonyDto>> GetAllTestimoniesAsync();
         Task<Response<List<TestimonyDto>>> GetLastTenTestimoniesAsync();
+        Task<Response<bool>> AddTestimonyAsync(TestimonyDto dto);
     }
 }
