@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using TACShilohDistricts.Core.DTOs;
+using TACShilohDistricts.Core.DTOs.Testimony;
 using TACShilohDistricts.Core.Enums;
 using TACShilohDistricts.Core.IServices;
 using TACShilohDistricts.Core.ViewModel;
@@ -128,6 +130,23 @@ namespace TACShilohDistricts.Controllers
                 TempData["error"] = "error occur";
             }
             return View(vm);
+        }
+
+        public IActionResult AddTestimony()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> AddTestimony(TestimonyDto dto)
+        {
+            var response = await _testimonyService.AddTestimonyAsync(dto);
+            if (response.Succeeded)
+            {
+                TempData["Response"] = "success";
+                return View(response);
+            }
+            return View();
         }
     }
 }

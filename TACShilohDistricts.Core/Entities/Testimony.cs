@@ -12,6 +12,6 @@ namespace TACShilohDistricts.Core.Entities
         public string Description { get; set; }
         public string? TestifyerPictureUrl { get; set; }
         public string? TestifyerLocation { get; set; }
-        public bool IsApproved { get; set; }
+        public bool IsApproved { get; set; } = true;
     }
 }
