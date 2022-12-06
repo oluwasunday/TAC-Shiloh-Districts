@@ -23,6 +23,21 @@ namespace TACShilohDistricts.Services.Services
             _mapper = mapper;
         }
 
+        public async Task<Response<bool>> AddTestimonyAsync(TestimonyDto dto)
+        {
+            if(dto == null)
+            {
+                return Response<bool>.Fail("Please fill all required information");
+            }
+
+            var testimony = _mapper.Map<Testimony>(dto);
+
+            _unitOfWork.Testimony.Add(testimony);
+            await _unitOfWork.CompleteAsync();
+
+            return Response<bool>.Success("success", true);
+        }
+
         public async Task<List<TestimonyDto>> GetAllTestimoniesAsync()
         {
             var testimonies = _unitOfWork.Testimony.GetAll().OrderByDescending(x => x.CreatedAt);

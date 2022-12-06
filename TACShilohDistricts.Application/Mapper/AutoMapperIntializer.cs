@@ -29,6 +29,8 @@ namespace TACShilohDistricts.Application.Mapper
 
             CreateMap<NewsAndEventsDto, NewsAndEvents>().ReverseMap();
             CreateMap<NewsAndEvents, NewsAndEventsDto>().ReverseMap();
+
+            CreateMap<Testimony, TestimonyDto>().ReverseMap();
         }
     }
 }
