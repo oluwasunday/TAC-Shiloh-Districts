@@ -278,3 +278,8 @@ C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts\
 C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts\bin\Debug\net6.0\Microsoft.Build.dll
 C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts\bin\Debug\net6.0\Microsoft.Build.Framework.dll
 C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts\bin\Debug\net6.0\Microsoft.NET.StringTools.dll
+C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts\obj\Debug\net6.0\staticwebassets\msbuild.TACShilohDistricts.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts\obj\Debug\net6.0\staticwebassets\msbuild.build.TACShilohDistricts.props
+C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.TACShilohDistricts.props
+C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.TACShilohDistricts.props
+C:\Users\GIGLogistics\Documents\Portfolio\TACShilohDistricts\TACShilohDistricts\obj\Debug\net6.0\staticwebassets.pack.json
